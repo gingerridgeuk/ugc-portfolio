@@ -209,14 +209,10 @@ a {
 }
 
 .envelope-body {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background-color: var(--color-white);
-    border-radius: var(--radius-md);
-    box-shadow: var(--shadow-medium);
-    transition: all var(--transition-medium);
+  background: none;
+  box-shadow: none;
 }
+
 
 .envelope-image {
     position: absolute;
