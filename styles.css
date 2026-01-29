@@ -1110,3 +1110,14 @@ main {
         max-width: 260px;
     }
 }
+.polaroid--full {
+  width: 240px;
+}
+
+.polaroid-fullimg {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-medium);
+}
