@@ -1148,3 +1148,22 @@ main {
   border-radius: 0 !important;   /* stop rounding revealing the PNG edges */
 }
 
+/* --- ENVELOPE IMAGE OVERRIDE (force sizing) --- */
+.envelope-body { position: relative !important; overflow: hidden !important; }
+
+.envelope-body > img.envelope-image {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  max-width: none !important;
+  max-height: none !important;
+  display: block !important;
+  z-index: 0 !important;
+}
+
+
