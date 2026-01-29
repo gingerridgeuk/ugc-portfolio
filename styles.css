@@ -1162,4 +1162,18 @@ main {
   z-index: 0 !important;
 }
 
+/* --- FORCE REMOVE WHITE BOXES AROUND ENVELOPES --- */
+.envelope,
+.envelope-body {
+  background: transparent !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+}
+
+.envelope-image {
+  display: block;
+  width: 280px;       /* change
+
+
 
