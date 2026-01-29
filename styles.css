@@ -1121,3 +1121,14 @@ main {
   border-radius: var(--radius-sm);
   box-shadow: var(--shadow-medium);
 }
+
+.polaroid--full {
+  background: transparent;
+}
+
+.polaroid-fullimg {
+  background: transparent;
+  border-radius: 18px; /* soften the image edge */
+  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+}
+
