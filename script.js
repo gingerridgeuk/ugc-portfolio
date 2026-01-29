@@ -5,8 +5,8 @@
 const CONFIG = {
     email: 'hello@mishahazy.com',
     social: {
-        instagram: 'https://instagram.com/hazymay',
-        tiktok: 'https://tiktok.com/@hazymay',
+        instagram: 'https://instagram.com/hazymay_',
+        tiktok: 'https://tiktok.com/@hazymay_',
         linkedin: 'https://linkedin.com/in/mishahazy'
     },
     videos: [
