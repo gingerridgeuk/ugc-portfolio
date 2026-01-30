@@ -1183,10 +1183,5 @@ main {
 
 .envelope-image {
   transition: transform 300ms ease;
-}
-@media (hover: hover) {
-  .envelope:hover .envelope-image {
-    filter: drop-shadow(0 18px 40px rgba(0,0,0,0.12));
-  }
-}
+
 
