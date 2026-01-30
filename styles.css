@@ -1144,28 +1144,12 @@ main {
   border-radius: 0 !important;   /* stop rounding revealing the PNG edges */
 }
 
-/* --- ENVELOPE IMAGE OVERRIDE (force sizing) --- */
-.envelope-body { position: relative !important; overflow: hidden !important; }
 
-.envelope-body > img.envelope-image {
-  position: absolute !important;
-  top: 0 !important;
-  left: 0 !important;
-  right: 0 !important;
-  bottom: 0 !important;
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: contain !important;
-  max-width: none !important;
-  max-height: none !important;
-  display: block !important;
-  z-index: 0 !important;
-}
 
 /* --- ENVELOPE IMAGES: show correctly, no white container --- */
 .envelope { 
   width: 280px;
-  height: auto;
+  height: 180px;
   background: transparent;
 }
 
@@ -1175,11 +1159,13 @@ main {
   border-radius: 0;
   padding: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .envelope-image {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: contain;
 }
+
