@@ -1183,19 +1183,7 @@ main {
 
 .envelope-image {
   transition: transform 300ms ease;
-
-/* --- SOCIAL PROOF TYPOGRAPHY POLISH --- */
-.social-proof .proof-value {
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 500;
 }
-
-.social-proof .proof-label {
-  font-family: "Libre Baskerville", serif;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
    /* --- SOCIAL PROOF FONT OVERRIDES --- */
 .social-proof .proof-value {
   font-family: "Cormorant Garamond", serif !important;
