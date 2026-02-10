@@ -513,7 +513,9 @@ main {
     font-size: 1.25rem;
     color: var(--color-dark-brown);
     margin-bottom: var(--space-xs);
-    font-weight: 600;
+    font-weight: 500;
+   .proof-value {
+  letter-spacing: 0.02em;
 }
 
 .proof-label {
