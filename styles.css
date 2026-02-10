@@ -1196,3 +1196,16 @@ main {
   text-transform: uppercase;
 }
 
+   /* --- SOCIAL PROOF FONT OVERRIDES --- */
+.social-proof .proof-value {
+  font-family: "Cormorant Garamond", serif !important;
+  font-weight: 500;
+}
+
+.social-proof .proof-label {
+  font-family: "Libre Baskerville", serif !important;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+
