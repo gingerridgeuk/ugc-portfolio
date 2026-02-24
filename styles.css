@@ -9,20 +9,30 @@
 }
 
 :root {
-    /* Colors - warm, editorial palette */
-    --color-cream: #faf8f5;
-    --color-sand: #e8e3dc;
-    --color-warm-gray: #9e9589;
-    --color-dark-brown: #3d3530;
-    --color-rich-brown: #5a4a42;
-    --color-accent: #c17b5c;
-    --color-white: #ffffff;
-    --color-black: #1a1614;
-    
-    /* Typography */
-   --font-display: 'Cormorant Garamond', serif;
-    --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
-    
+  /* Colors */
+  --color-cream: #faf8f5;
+  --color-sand: #e8e3dc;
+  --color-warm-gray: #9e9589;
+  --color-dark-brown: #3d3530;
+  --color-rich-brown: #5a4a42;
+  --color-accent: #c17b5c;
+  --color-white: #ffffff;
+  --color-black: #1a1614;
+
+  /* Typography */
+  --font-display: "Cormorant Garamond", serif;
+  --font-body: "Libre Baskerville", serif;
+
+  /* Type sizing */
+  --text-base: 1.0625rem;   /* 17px */
+  --text-small: 0.95rem;
+  --text-caption: 0.85rem;
+
+  /* Layout */
+  --content-max: 68ch;
+
+  /* Spacing, shadows, radius, transitions (leave your existing ones as they are) */
+}
     /* Spacing */
     --space-xs: 0.5rem;
     --space-sm: 1rem;
@@ -68,13 +78,14 @@ html {
 }
 
 body {
-    font-family: var(--font-body);
-    font-size: 1rem;
-    line-height: 1.6;
-    color: var(--color-dark-brown);
-    background-color: var(--color-cream);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: 1.75;
+  color: var(--color-dark-brown);
+  background-color: var(--color-cream);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 /* ================================
@@ -82,18 +93,33 @@ body {
    ================================ */
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-display);
-    font-weight: 600;
-    line-height: 1.2;
-    margin-bottom: var(--space-md);
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+  margin-bottom: var(--space-md);
 }
 
-h1 { font-size: clamp(2rem, 5vw, 3.5rem); }
-h2 { font-size: clamp(1.5rem, 4vw, 2.5rem); }
-h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
+h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); }
+h2 { font-size: clamp(1.6rem, 3vw, 2.4rem); }
+h3 { font-size: clamp(1.25rem, 2.2vw, 1.7rem); }
 
 p {
-    margin-bottom: var(--space-sm);
+  margin-bottom: var(--space-sm);
+  max-width: var(--content-max);
+}
+
+.hero-subtext,
+.section-header p,
+.bio-section p {
+  font-size: 1.0625rem;
+  line-height: 1.8;
+}
+
+.helper-text {
+  font-size: var(--text-caption);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 a {
