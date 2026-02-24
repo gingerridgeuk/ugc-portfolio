@@ -1267,4 +1267,12 @@ main {
 .about-page .about-text > :empty {
   display: none !important;
 }
+/* ABOUT PAGE – smaller polaroid */
+.about-page .polaroid-display {
+  max-width: 320px;
+  margin: 0 auto;
+}
 
+.about-page .about-layout {
+  grid-template-columns: 320px 1fr;
+}
