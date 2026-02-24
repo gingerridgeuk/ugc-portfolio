@@ -422,13 +422,13 @@ a {
    ================================ */
 
 .helper-text {
-    margin-top: var(--space-xl);
-    font-size: 0.875rem;
-    color: var(--color-warm-gray);
-    text-align: center;
-    letter-spacing: 0.05em;
+  margin-top: var(--space-xl);
+  font-size: var(--text-caption);
+  color: var(--color-warm-gray);
+  text-align: center;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
-
 /* ================================
    PAGE HEADER
    ================================ */
