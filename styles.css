@@ -1241,5 +1241,8 @@ main {
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
-
+/* ABOUT PAGE: header should only show the back link */
+.about-page .page-header {
+  justify-content: flex-start;
+}
 
