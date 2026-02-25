@@ -1333,3 +1333,7 @@ main {
 }
 
 .video-grid { margin-bottom: calc(var(--space-2xl) + 1rem); }
+#ugc-section,
+#collabs-section {
+  scroll-margin-top: 90px;
+}
