@@ -1391,3 +1391,6 @@ main {
   gap: var(--space-md);
   width: 100%;
 }
+#collabs-section {
+  padding-bottom: 120px;
+}
