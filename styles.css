@@ -1337,3 +1337,30 @@ main {
 #collabs-section {
   scroll-margin-top: 90px;
 }
+:root { --header-offset: 90px; } /* tweak if needed */
+
+#ugc-hero,
+#collabs-hero {
+  scroll-margin-top: var(--header-offset);
+}
+.page-intro {
+  text-align: center;
+  margin-bottom: var(--space-xl);
+}
+
+.jump-buttons {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+  margin: var(--space-sm) 0 var(--space-lg);
+}
+
+.page-title {
+  margin-top: var(--space-sm);
+  margin-bottom: var(--space-sm);
+}
+
+.video-grid {
+  margin-bottom: var(--space-2xl); /* more breathing room before next section */
+}
