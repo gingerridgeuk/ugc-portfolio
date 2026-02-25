@@ -1425,3 +1425,22 @@ main {
     margin-top: 60px;
   }
 }
+.logos-heading {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  margin-bottom: 18px;
+}
+
+.logos-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+  align-items: center;
+}
+
+.logos-grid img {
+  max-width: 150px;
+  width: 100%;
+  height: auto;
+  opacity: 0.85;
+}
