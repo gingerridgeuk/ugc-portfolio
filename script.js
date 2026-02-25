@@ -142,7 +142,7 @@ function setupVideoGrid() {
     const videoGrid = document.getElementById('videoGrid');
     if (!videoGrid) return;
 
-    CONFIG.videos.forEach(video => {
+    CONFIG.videos.slice(0, 5).forEach(video => {
         const tile = document.createElement('button');
         tile.className = 'video-tile';
         tile.setAttribute('aria-label', `Play ${video.title}`);
