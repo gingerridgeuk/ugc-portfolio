@@ -1394,3 +1394,7 @@ main {
 #collabs-section {
   padding-bottom: 120px;
 }
+
+#collabs-hero + .service-details {
+  margin-bottom: 120px;
+}
