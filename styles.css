@@ -1398,3 +1398,30 @@ main {
 #collabs-hero + .service-details {
   margin-bottom: 120px;
 }
+.collabs-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.collabs-logos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.collabs-logos img {
+  max-width: 140px;
+  opacity: 0.8;
+}
+
+@media (max-width: 900px) {
+  .collabs-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .collabs-logos {
+    margin-top: 60px;
+  }
+}
