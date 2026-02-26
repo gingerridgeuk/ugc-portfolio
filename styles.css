@@ -1404,67 +1404,12 @@ main {
   gap: 80px;
   align-items: start;
 }
-
-.collabs-logos {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-}
-
-.collabs-logos img {
-  max-width: 140px;
-  opacity: 0.8;
-}
-
-@media (max-width: 900px) {
-  .collabs-layout {
-    grid-template-columns: 1fr;
-  }
-
-  .collabs-logos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-text-align: center;
-}
-
-.logos-heading {
-  margin-bottom: 30px;
-}
-
-.logos-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px 50px;
-}
-
-.logos-grid img {
-  max-width: 150px;
-  width: 100%;
-  height: auto;
-  opacity: 0.85;
-}
-.collabs-split{
+/* Desktop layout */
+.collabs-layout{
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
   align-items: start;
-}
-
-.collabs-left{
-  display: flex;
-  justify-content: flex-start;
-}
-
-.collabs-list{
-  margin: 0;
-  padding-left: 1.2em;
-}
-
-.collabs-right{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .logos-heading{
@@ -1476,25 +1421,37 @@ text-align: center;
 .logos-grid{
   display: grid;
   grid-template-columns: repeat(2, minmax(120px, 1fr));
-  gap: 26px 40px;
-  width: 100%;
-  max-width: 520px;
-}
-
-.logos-grid{
-  display: grid;
-  grid-template-columns: repeat(2, minmax(120px, 1fr));
   gap: 22px 34px;
   width: 100%;
   max-width: 460px;
   margin: 0 auto;
-  place-items: center; /* centers each logo in its cell */
+  place-items: center;
 }
 
 .logos-grid img{
-  width: auto !important;      /* stops stretching */
-  height: 52px;                /* set a consistent logo height */
-  max-width: 190px;            /* prevents long logos going huge */
+  width: auto !important;
+  height: 52px;
+  max-width: 190px;
   object-fit: contain;
   display: block;
+  opacity: 0.85;
 }
+
+/* Mobile */
+@media (max-width: 900px){
+  .collabs-layout{
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .logos-grid{
+    max-width: 420px;
+    gap: 20px 26px;
+  }
+
+  .logos-grid img{
+    height: 46px;
+    max-width: 180px;
+  }
+}
+
