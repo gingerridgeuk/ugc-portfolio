@@ -1444,3 +1444,46 @@ text-align: center;
   height: auto;
   opacity: 0.85;
 }
+.collabs-split{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.collabs-left{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.collabs-list{
+  margin: 0;
+  padding-left: 1.2em;
+}
+
+.collabs-right{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logos-heading{
+  margin: 0 0 24px;
+  text-align: center;
+  width: 100%;
+}
+
+.logos-grid{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(120px, 1fr));
+  gap: 26px 40px;
+  width: 100%;
+  max-width: 520px;
+}
+
+.logos-grid img{
+  width: 100%;
+  height: auto;
+  max-height: 70px;
+  object-fit: contain;
+}
