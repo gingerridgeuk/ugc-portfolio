@@ -1422,20 +1422,19 @@ main {
   }
 
   .collabs-logos {
-    margin-top: 60px;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* keeps heading aligned left */
 }
+
 .logos-heading {
-  font-family: var(--font-display);
-  font-size: 1.2rem;
-  margin-bottom: 18px;
+  margin-bottom: 30px;
 }
 
 .logos-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 22px;
-  align-items: center;
+  gap: 30px 50px;
 }
 
 .logos-grid img {
