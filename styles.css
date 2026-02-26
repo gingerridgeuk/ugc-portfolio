@@ -1424,7 +1424,8 @@ main {
   .collabs-logos {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* keeps heading aligned left */
+  align-items: center;
+text-align: center;
 }
 
 .logos-heading {
