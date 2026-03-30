@@ -605,6 +605,9 @@ main {
     height: 100%;
     object-fit: cover;
 }
+.video-thumbnail {
+    display: block;
+}
 
 .video-overlay {
     position: absolute;
