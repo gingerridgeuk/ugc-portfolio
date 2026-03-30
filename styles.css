@@ -1532,3 +1532,26 @@ h2 + p {
   line-height: 1.6;
   font-size: 1.05rem;
 }
+/* Kill any previous bullet styles */
+.service-item ul,
+.collabs-left ul {
+  list-style: none !important;
+  padding-left: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Force bullet + text styling */
+.service-item li,
+.collabs-left li {
+  color: #3e3834 !important;
+  margin-bottom: 10px;
+}
+
+/* Force bullet dot colour */
+.service-item li::before,
+.collabs-left li::before {
+  content: "•";
+  color: #3e3834 !important;
+  margin-right: 10px;
+}
