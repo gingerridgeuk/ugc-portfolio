@@ -10,55 +10,42 @@ const CONFIG = {
         linkedin: 'https://linkedin.com/in/mishahazy'
     },
     videos: [
-        {
-            id: 1,
-            title: 'Summer Skincare Routine',
-            caption: 'Authentic morning routine showcasing brand partnership',
-            platform: 'youtube',
-            videoId: 'dQw4w9WgXcQ',
-            thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg'
-        },
-        {
-            id: 2,
-            title: 'Coffee Shop Aesthetic',
-            caption: 'Lifestyle content with natural product integration',
-            platform: 'youtube',
-            videoId: 'dQw4w9WgXcQ',
-            thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg'
-        },
-        {
-            id: 3,
-            title: 'Getting Ready GRWM',
-            caption: 'High-energy beauty routine with seamless product placement',
-            platform: 'youtube',
-            videoId: 'dQw4w9WgXcQ',
-            thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg'
-        },
-        {
-            id: 4,
-            title: 'Day in the Life',
-            caption: 'Vlog-style content featuring brand storytelling',
-            platform: 'youtube',
-            videoId: 'dQw4w9WgXcQ',
-            thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg'
-        },
-        {
-            id: 5,
-            title: 'Product Unboxing',
-            caption: 'Authentic first impressions and testing',
-            platform: 'youtube',
-            videoId: 'dQw4w9WgXcQ',
-            thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg'
-        },
-        {
-            id: 6,
-            title: 'Trending Sound Hook',
-            caption: 'Viral audio integration with brand message',
-            platform: 'youtube',
-            videoId: 'dQw4w9WgXcQ',
-            thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg'
-        }
-    ]
+    {
+        id: 1,
+        title: 'Summer Skincare Routine',
+        caption: 'Authentic morning routine showcasing brand partnership',
+        videoFile: 'assets/video1.mp4',
+        thumbnail: 'assets/thumb1.jpg'
+    },
+    {
+        id: 2,
+        title: 'Coffee Shop Aesthetic',
+        caption: 'Lifestyle content with natural product integration',
+        videoFile: 'assets/video2.mp4',
+        thumbnail: 'assets/thumb2.jpg'
+    },
+    {
+        id: 3,
+        title: 'Getting Ready GRWM',
+        caption: 'High-energy beauty routine with seamless product placement',
+        videoFile: 'assets/video3.mp4',
+        thumbnail: 'assets/thumb3.jpg'
+    },
+    {
+        id: 4,
+        title: 'Day in the Life',
+        caption: 'Vlog-style content featuring brand storytelling',
+        videoFile: 'assets/video4.mp4',
+        thumbnail: 'assets/thumb4.jpg'
+    },
+    {
+        id: 5,
+        title: 'Product Unboxing',
+        caption: 'Authentic first impressions and testing',
+        videoFile: 'assets/video5.mp4',
+        thumbnail: 'assets/thumb5.jpg'
+    }
+]
 };
 
 // ================================
