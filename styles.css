@@ -1462,3 +1462,14 @@ h2 + p {
   margin-left: auto;
   margin-right: auto;
 }
+.service-item ul {
+  text-align: center;
+  list-style-position: inside;
+  padding-left: 0;
+  margin: 0 auto;
+  max-width: 500px;
+}
+.service-item li {
+  color: #3e3834; /* or whatever your darker tone is */
+  font-weight: 400;
+}
