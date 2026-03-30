@@ -1473,3 +1473,11 @@ h2 + p {
   color: #3e3834; /* or whatever your darker tone is */
   font-weight: 400;
 }
+.service-item ul,
+.collabs-layout ul {
+  text-align: center;
+  list-style-position: inside;
+  padding-left: 0;
+  margin: 0 auto;
+  max-width: 500px;
+}
