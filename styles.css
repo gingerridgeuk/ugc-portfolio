@@ -1523,3 +1523,7 @@ h2 + p {
 .collabs-left ul {
   margin-bottom: 60px;
 }
+.service-item ul,
+.collabs-left ul {
+  margin-bottom: 60px;
+}
