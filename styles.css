@@ -1457,7 +1457,7 @@ main {
 #collabs-content {
   margin-bottom: 120px;
 }
-.contact-section p {
+h2 + p {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
