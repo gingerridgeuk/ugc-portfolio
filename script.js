@@ -52,13 +52,8 @@ const CONFIG = {
 // UTILITY FUNCTIONS
 // ================================
 
-function getEmbedUrl(platform, videoId) {
-    if (platform === 'youtube') {
-        return `https://www.youtube.com/embed/${videoId}?autoplay=1`;
-    } else if (platform === 'vimeo') {
-        return `https://player.vimeo.com/video/${videoId}?autoplay=1`;
-    }
-    return '';
+function getVideoSource(video) {
+    return video.videoFile || '';
 }
 
 function trapFocus(element) {
