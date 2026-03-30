@@ -128,18 +128,18 @@ function setupVideoGrid() {
         const tile = document.createElement('button');
         tile.className = 'video-tile';
         tile.setAttribute('aria-label', `Play ${video.title}`);
-        tile.dataset.videoId = video.videoId;
-        tile.dataset.platform = video.platform;
         tile.dataset.title = video.title;
         tile.dataset.caption = video.caption;
 
         tile.innerHTML = `
-            <img src="${video.thumbnail}" alt="${video.title}" class="video-thumbnail" loading="lazy">
-            <div class="video-overlay">
-                <div class="video-title">${video.title}</div>
-                <div class="video-caption">${video.caption}</div>
-            </div>
-        `;
+    <video class="video-thumbnail" muted playsinline preload="metadata">
+        <source src="${video.videoFile}" type="video/mp4">
+    </video>
+    <div class="video-overlay">
+        <div class="video-title">${video.title}</div>
+        <div class="video-caption">${video.caption}</div>
+    </div>
+`;
 
         tile.addEventListener('click', () => openVideoModal(video));
 
@@ -164,16 +164,11 @@ function openVideoModal(video) {
     const modalTitle = document.getElementById('modalTitle');
     const modalCaption = document.getElementById('modalCaption');
 
-    const embedUrl = getEmbedUrl(video.platform, video.videoId);
-    
     videoEmbed.innerHTML = `
-        <iframe 
-            src="${embedUrl}" 
-            title="${video.title}"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen>
-        </iframe>
-    `;
+    <video controls autoplay playsinline style="width:100%; height:100%;">
+        <source src="${video.videoFile}" type="video/mp4">
+    </video>
+`;
 
     modalTitle.textContent = video.title;
     modalCaption.textContent = video.caption;
