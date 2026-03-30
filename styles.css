@@ -1454,4 +1454,6 @@ main {
     max-width: 180px;
   }
 }
-
+#collabs-content {
+  margin-bottom: 120px;
+}
