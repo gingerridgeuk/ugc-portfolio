@@ -1489,3 +1489,33 @@ h2 + p {
   padding-left: 0;
   margin: 0 auto;
 }
+/* Centre the UGC list block */
+.service-details .service-item {
+  display: flex;
+  justify-content: center;
+}
+
+/* Centre the Collaborations list block */
+.collabs-left {
+  display: flex;
+  justify-content: center;
+}
+
+/* Centre the text inside both lists */
+.service-item ul,
+.collabs-left ul {
+  text-align: center;
+  list-style-position: inside;
+  padding-left: 0;
+  margin: 0 auto;
+  max-width: 520px;
+}
+
+/* Make both sections use the darker text */
+.service-item li,
+.collabs-left li,
+#collabs-hero p,
+#ugc-hero p,
+.section-header p {
+  color: #3e3834;
+}
