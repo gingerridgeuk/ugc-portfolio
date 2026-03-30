@@ -1519,3 +1519,7 @@ h2 + p {
 .section-header p {
   color: #3e3834;
 }
+.service-item ul,
+.collabs-left ul {
+  margin-bottom: 60px;
+}
