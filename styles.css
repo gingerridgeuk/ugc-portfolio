@@ -1555,3 +1555,25 @@ h2 + p {
   color: #3e3834 !important;
   margin-right: 10px;
 }
+/* Put space back between collabs list and logos heading */
+.logos-heading {
+  margin-top: 70px !important;
+  margin-bottom: 24px;
+}
+
+/* Make the Collaborations list tighter */
+.collabs-left ul {
+  margin: 0 auto;
+  padding-left: 0;
+}
+
+.collabs-left li {
+  margin-bottom: 6px !important;
+  line-height: 1.35;
+}
+
+/* Keep the UGC list slightly roomier if you prefer it */
+.service-item li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
