@@ -1527,3 +1527,8 @@ h2 + p {
 .collabs-left ul {
   margin-bottom: 60px;
 }
+.service-item li,
+.collabs-left li {
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
