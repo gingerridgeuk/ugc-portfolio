@@ -165,9 +165,11 @@ function openVideoModal(video) {
     const modalCaption = document.getElementById('modalCaption');
 
     videoEmbed.innerHTML = `
-    <video controls autoplay playsinline style="width:100%; height:100%;">
-        <source src="${video.videoFile}" type="video/mp4">
+  <div class="video-modal-inner">
+    <video controls autoplay playsinline>
+      <source src="${video.videoFile}" type="video/mp4">
     </video>
+  </div>
 `;
 
     modalTitle.textContent = video.title;
