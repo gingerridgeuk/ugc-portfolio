@@ -1590,3 +1590,14 @@ h2 + p {
   margin: 0 auto;
   display: block;
 }
+.video-modal-inner {
+  width: 100%;
+  max-width: 400px;     /* controls how wide it is */
+  margin: 0 auto;
+}
+
+.video-modal-inner video {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
