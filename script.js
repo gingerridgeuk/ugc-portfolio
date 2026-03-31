@@ -131,11 +131,14 @@ function setupVideoGrid() {
         tile.dataset.title = video.title;
         tile.dataset.caption = video.caption;
 
-        tile.innerHTML = `
-    <video class="video-thumbnail" muted playsinline preload="metadata">
-        <source src="${video.videoFile}" type="video/mp4">
-    </video>
-    <div class="video-overlay">
+        ttile.innerHTML = `
+  <img src="${video.thumbnail}" class="video-thumbnail" />
+
+  <div class="video-overlay">
+    <div class="video-title">${video.title}</div>
+    <div class="video-caption">${video.caption}</div>
+  </div>
+`;
         <div class="video-title">${video.title}</div>
         <div class="video-caption">${video.caption}</div>
     </div>
