@@ -1580,3 +1580,13 @@ h2 + p {
   margin-bottom: 10px;
   line-height: 1.5;
 }
+/* Modal video container */
+#videoModal video {
+  max-height: 80vh;     /* keeps it within screen height */
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 16px;
+  margin: 0 auto;
+  display: block;
+}
