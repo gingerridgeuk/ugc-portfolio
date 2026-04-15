@@ -1601,3 +1601,7 @@ h2 + p {
   height: auto;
   border-radius: 16px;
 }
+.collabs-cta {
+  margin-top: 50px;
+  text-align: center;
+}
