@@ -1642,3 +1642,8 @@ h2 + p {
 #studio-work .section-header {
   margin-bottom: var(--space-lg);
 }
+.studio-video:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-medium);
+  transition: transform var(--transition-medium), box-shadow var(--transition-medium);
+}
