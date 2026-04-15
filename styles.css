@@ -1647,3 +1647,65 @@ h2 + p {
   box-shadow: var(--shadow-medium);
   transition: transform var(--transition-medium), box-shadow var(--transition-medium);
 }
+/* ================================
+   STUDIO PAGE: CLEARER SPLIT STRUCTURE
+   ================================ */
+
+.studio-jump-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+  margin: var(--space-sm) 0 var(--space-lg);
+}
+
+#studio-content,
+#wedding-content {
+  scroll-margin-top: 100px;
+}
+
+.studio-page .hero--section {
+  text-align: center;
+  margin-bottom: var(--space-lg);
+}
+
+.studio-page .hero--section .hero-subtext {
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.studio-page .studio-section .service-details {
+  margin-bottom: var(--space-2xl);
+}
+
+.studio-page .studio-section .service-item {
+  display: flex;
+  justify-content: center;
+}
+
+.studio-page .studio-section .service-item ul {
+  text-align: center;
+  list-style: none !important;
+  padding-left: 0;
+  margin: 0 auto;
+  max-width: 560px;
+}
+
+.studio-page .studio-section .service-item li {
+  position: relative;
+  padding-left: 0;
+  margin-bottom: 0.75rem;
+  color: var(--color-dark-brown) !important;
+  line-height: 1.6;
+}
+
+.studio-page .studio-section .service-item li::before {
+  content: "• ";
+  color: var(--color-accent) !important;
+}
+
+.support-note {
+  margin-top: calc(var(--space-lg) * -0.5);
+}
