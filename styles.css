@@ -1605,3 +1605,33 @@ h2 + p {
   margin-top: 50px;
   text-align: center;
 }
+.studio-video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 200px);
+  justify-content: center;
+  gap: 1.2rem;
+  margin-top: var(--space-lg);
+}
+
+.studio-video {
+  position: relative;
+  aspect-ratio: 9 / 16;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background-color: var(--color-sand);
+  box-shadow: var(--shadow-soft);
+}
+
+.studio-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .studio-video-grid {
+    grid-template-columns: repeat(2, minmax(140px, 1fr));
+    gap: 1rem;
+  }
+}
