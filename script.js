@@ -52,10 +52,6 @@ const CONFIG = {
 // UTILITY FUNCTIONS
 // ================================
 
-function getVideoSource(video) {
-    return video.videoFile || '';
-}
-
 function trapFocus(element) {
     const focusableElements = element.querySelectorAll(
         'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
@@ -122,19 +118,20 @@ function setupVideoGrid() {
     const videoGrid = document.getElementById('videoGrid');
     if (!videoGrid) return;
 
+    videoGrid.innerHTML = '<h2 class="visually-hidden">Recent Work</h2>';
+
     CONFIG.videos.slice(0, 5).forEach(video => {
         const tile = document.createElement('button');
         tile.className = 'video-tile';
+        tile.type = 'button';
         tile.setAttribute('aria-label', `Play ${video.title}`);
-        tile.dataset.title = video.title;
-        tile.dataset.caption = video.caption;
 
         tile.innerHTML = `
-          <img src="${video.thumbnail}" alt="${video.title}" class="video-thumbnail" loading="lazy">
-          <div class="video-overlay">
-            <div class="video-title">${video.title}</div>
-            <div class="video-caption">${video.caption}</div>
-          </div>
+            <img src="${video.thumbnail}" alt="${video.title}" class="video-thumbnail" loading="lazy">
+            <div class="video-overlay">
+                <div class="video-title">${video.title}</div>
+                <div class="video-caption">${video.caption}</div>
+            </div>
         `;
 
         tile.addEventListener('click', () => openVideoModal(video));
@@ -160,11 +157,11 @@ function openVideoModal(video) {
     const modalCaption = document.getElementById('modalCaption');
 
     videoEmbed.innerHTML = `
-      <div class="video-modal-inner">
-        <video controls autoplay playsinline>
-          <source src="${video.videoFile}" type="video/mp4">
-        </video>
-      </div>
+        <div class="video-modal-inner">
+            <video controls autoplay playsinline>
+                <source src="${video.videoFile}" type="video/mp4">
+            </video>
+        </div>
     `;
 
     modalTitle.textContent = video.title;
@@ -237,4 +234,114 @@ function setupSmoothScrolling() {
                 target.scrollIntoView({
                     behavior: 'smooth',
                     block: 'start'
-               
+                });
+            }
+        });
+    });
+}
+
+// ================================
+// LANDING PAGE INTERACTIONS
+// ================================
+
+function setupLandingPageInteractions() {
+    const interactiveItems = document.querySelectorAll('.envelope, .polaroid');
+
+    interactiveItems.forEach(item => {
+        item.addEventListener('touchstart', () => {
+            item.style.transform = item.classList.contains('polaroid')
+                ? 'rotate(-3deg) translateY(-8px)'
+                : 'translateY(-12px)';
+        }, { passive: true });
+
+        item.addEventListener('touchend', () => {
+            item.style.transform = '';
+        }, { passive: true });
+
+        item.addEventListener('touchcancel', () => {
+            item.style.transform = '';
+        }, { passive: true });
+    });
+}
+
+// ================================
+// FORM HANDLING
+// ================================
+
+function setupFormHandling() {
+    const forms = document.querySelectorAll('form[data-netlify="true"]');
+
+    forms.forEach(form => {
+        form.addEventListener('submit', function() {
+            const button = form.querySelector('button[type="submit"]');
+            if (button) {
+                button.disabled = true;
+                button.textContent = 'Sending...';
+            }
+        });
+    });
+}
+
+// ================================
+// ACCESSIBILITY ENHANCEMENTS
+// ================================
+
+function setupAccessibility() {
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Tab') {
+            document.body.classList.add('keyboard-nav');
+        }
+    });
+
+    document.addEventListener('mousedown', () => {
+        document.body.classList.remove('keyboard-nav');
+    });
+
+    const pageTitle = document.querySelector('h1');
+    if (pageTitle) {
+        pageTitle.setAttribute('role', 'heading');
+        pageTitle.setAttribute('aria-level', '1');
+    }
+}
+
+// ================================
+// LOADING STATES
+// ================================
+
+function setupLoadingStates() {
+    window.addEventListener('load', () => {
+        document.body.classList.add('loaded');
+    });
+
+    const images = document.querySelectorAll('img');
+    images.forEach(img => {
+        if (img.complete) {
+            img.classList.add('loaded');
+        } else {
+            img.addEventListener('load', () => {
+                img.classList.add('loaded');
+            });
+        }
+    });
+}
+
+// ================================
+// INITIALIZE
+// ================================
+
+function init() {
+    setupLinks();
+    setupVideoGrid();
+    setupVideoModal();
+    setupSmoothScrolling();
+    setupLandingPageInteractions();
+    setupFormHandling();
+    setupAccessibility();
+    setupLoadingStates();
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+} else {
+    init();
+}
