@@ -19,29 +19,29 @@ const CONFIG = {
         },
         {
             id: 2,
-            title: 'Coffee Shop Aesthetic',
-            caption: 'Lifestyle content with natural product integration',
+            title: 'Hospitality UGC | House of Koko',
+            caption: 'A relaxed, social-first video capturing the atmosphere, food, and experience, designed to feel natural, inviting, and easy to engage with.',
             videoFile: 'assets/video2.mp4',
             thumbnail: 'assets/thumb2.jpg'
         },
         {
             id: 3,
-            title: 'Getting Ready GRWM',
-            caption: 'High-energy beauty routine with seamless product placement',
+            title: 'Wellness UGC | Rudding Park',
+            caption: 'A lifestyle-led video capturing the overall experience, combining movement, setting, and atmosphere to create content that feels organic and brand-aligned.',
             videoFile: 'assets/video3.mp4',
             thumbnail: 'assets/thumb3.jpg'
         },
         {
             id: 4,
-            title: 'Day in the Life',
-            caption: 'Vlog-style content featuring brand storytelling',
+            title: 'Event UGC | The Glee Club',
+            caption: 'An engaging, social-first video capturing the energy and atmosphere of a live event, created to feel immersive and shareable.',
             videoFile: 'assets/video4.mp4',
             thumbnail: 'assets/thumb4.jpg'
         },
         {
             id: 5,
-            title: 'Product Unboxing',
-            caption: 'Authentic first impressions and testing',
+            title: 'Educational UGC | Wonder of Wellness',
+            caption: 'A clear, informative video talking through a treatment in a simple and relatable way, designed to build trust and make complex topics feel accessible.',
             videoFile: 'assets/video5.mp4',
             thumbnail: 'assets/thumb5.jpg'
         }
