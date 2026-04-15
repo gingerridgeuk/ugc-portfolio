@@ -131,9 +131,8 @@ function setupVideoGrid() {
         tile.dataset.title = video.title;
         tile.dataset.caption = video.caption;
 
-        ttile.innerHTML = `
-  <img src="${video.thumbnail}" class="video-thumbnail" />
-
+        tile.innerHTML = `
+  <img src="${video.thumbnail}" alt="${video.title}" class="video-thumbnail" loading="lazy">
   <div class="video-overlay">
     <div class="video-title">${video.title}</div>
     <div class="video-caption">${video.caption}</div>
