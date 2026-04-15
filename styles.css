@@ -1635,3 +1635,10 @@ h2 + p {
     gap: 1rem;
   }
 }
+#studio-work {
+  margin-bottom: var(--space-2xl);
+}
+
+#studio-work .section-header {
+  margin-bottom: var(--space-lg);
+}
