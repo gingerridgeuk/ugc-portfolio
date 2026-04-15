@@ -12,8 +12,8 @@ const CONFIG = {
     videos: [
         {
             id: 1,
-            title: 'Summer Skincare Routine',
-            caption: 'Authentic morning routine showcasing brand partnership',
+            title: 'Beauty UGC | Pop of Beauty',
+            caption: 'A natural, in-the-moment style video showing the product in use, with a clear before and after to highlight real results.',
             videoFile: 'assets/video1.mp4',
             thumbnail: 'assets/thumb1.jpg'
         },
