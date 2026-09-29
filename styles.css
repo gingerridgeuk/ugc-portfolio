@@ -1709,3 +1709,356 @@ h2 + p {
 .support-note {
   margin-top: calc(var(--space-lg) * -0.5);
 }
+/* ==========================================
+   UGC PAGE - EDITORIAL REDESIGN
+   ========================================== */
+
+.ugc-page {
+  --ugc-ink: #28231f;
+  --ugc-muted: #847b72;
+  --ugc-line: #ded8d0;
+  --ugc-paper: #faf8f5;
+  --ugc-accent: #b77757;
+
+  font-family: "DM Sans", sans-serif;
+  font-weight: 300;
+  color: var(--ugc-ink);
+  background: var(--ugc-paper);
+}
+
+/* Header */
+
+.ugc-page .page-header {
+  background: rgba(250, 248, 245, 0.94);
+  border-bottom: 1px solid var(--ugc-line);
+  padding: 1.15rem 2rem;
+}
+
+.ugc-page .back-link {
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+/* Main page */
+
+.ugc-page main {
+  max-width: 1180px;
+  padding-top: 5rem;
+}
+
+/* Editorial intro */
+
+.ugc-page .page-intro {
+  margin: 0 auto 7rem;
+  max-width: 900px;
+}
+
+.ugc-page .page-intro .helper-text {
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--ugc-accent);
+  margin: 0 0 1.4rem;
+}
+
+.ugc-page .page-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(5rem, 12vw, 9rem);
+  font-weight: 400;
+  line-height: 0.78;
+  letter-spacing: -0.055em;
+  color: var(--ugc-ink);
+  margin: 0 0 2rem;
+}
+
+.ugc-page .page-intro .hero-subtext {
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 300;
+  line-height: 1.7;
+  color: var(--ugc-muted);
+  max-width: 440px;
+}
+
+/* Main UGC statement */
+
+.ugc-page #ugc-hero {
+  max-width: 850px;
+  margin: 0 auto 5rem;
+  text-align: center;
+}
+
+.ugc-page #ugc-hero h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(2.8rem, 6vw, 5.2rem);
+  font-weight: 400;
+  line-height: 0.98;
+  letter-spacing: -0.035em;
+  margin-bottom: 1.5rem;
+}
+
+.ugc-page #ugc-hero .hero-subtext {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.75;
+  max-width: 620px;
+  margin: 0 auto;
+  color: var(--ugc-muted);
+}
+
+/* Social proof becomes an editorial stats strip */
+
+.ugc-page .social-proof {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 900px;
+  margin: 0 auto 8rem;
+  padding: 1.6rem 0;
+  border-top: 1px solid var(--ugc-line);
+  border-bottom: 1px solid var(--ugc-line);
+  background: transparent;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.ugc-page .proof-item {
+  padding: 0.4rem 1.5rem;
+  text-align: center;
+  border-right: 1px solid var(--ugc-line);
+}
+
+.ugc-page .proof-item:last-child {
+  border-right: 0;
+}
+
+.ugc-page .social-proof .proof-value {
+  font-family: "Cormorant Garamond", serif !important;
+  font-size: 1.65rem;
+  font-weight: 400;
+  line-height: 1.1;
+  margin-bottom: 0.45rem;
+}
+
+.ugc-page .social-proof .proof-label {
+  font-family: "DM Sans", sans-serif !important;
+  font-size: 0.6rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ugc-muted);
+}
+
+/* What I Create */
+
+.ugc-page .studio-section {
+  margin-bottom: 6rem;
+}
+
+.ugc-page .section-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 2.5rem;
+}
+
+.ugc-page .section-header h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(2.8rem, 5vw, 4.3rem);
+  font-weight: 400;
+  letter-spacing: -0.035em;
+  margin-bottom: 0.8rem;
+}
+
+.ugc-page .section-header p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: var(--ugc-muted);
+}
+
+/* Services as clean editorial lines instead of bullets */
+
+.ugc-page .service-details .service-item {
+  display: block;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.ugc-page .service-item ul {
+  list-style: none !important;
+  max-width: 680px;
+  margin: 0 auto !important;
+  padding: 0;
+  border-top: 1px solid var(--ugc-line);
+}
+
+.ugc-page .service-item li {
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: var(--ugc-ink) !important;
+  padding: 0.95rem 0;
+  margin: 0 !important;
+  border-bottom: 1px solid var(--ugc-line);
+  text-align: center;
+}
+
+.ugc-page .service-item li::before {
+  content: none !important;
+}
+
+/* Portfolio videos */
+
+.ugc-page .video-grid {
+  margin-top: 1rem;
+  margin-bottom: 9rem;
+  gap: 1.4rem;
+}
+
+.ugc-page .video-tile {
+  border-radius: 2px;
+  box-shadow: none;
+  background: #eee9e3;
+  transition: transform 300ms ease;
+}
+
+@media (hover: hover) {
+  .ugc-page .video-tile:hover {
+    transform: translateY(-6px);
+    box-shadow: none;
+  }
+}
+
+/* CTA */
+
+.ugc-page .cta-section {
+  border-top: 1px solid var(--ugc-line);
+  border-bottom: 1px solid var(--ugc-line);
+  padding: 6rem 1rem;
+  margin-bottom: 7rem;
+  background: transparent;
+  text-align: center;
+}
+
+.ugc-page .cta-section h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  margin-bottom: 1rem;
+}
+
+.ugc-page .cta-section p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.9rem;
+  color: var(--ugc-muted);
+  margin: 0 auto 2rem;
+}
+
+.ugc-page .btn {
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 0.95rem 1.6rem;
+}
+
+/* Contact */
+
+.ugc-page .contact-form-section {
+  max-width: 700px;
+  margin: 0 auto 6rem;
+}
+
+.ugc-page .contact-form-section > h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(2.8rem, 5vw, 4.5rem);
+  font-weight: 400;
+  letter-spacing: -0.035em;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.ugc-page .contact-form {
+  background: transparent;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+}
+
+.ugc-page .form-group label {
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.62rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ugc-muted);
+}
+
+.ugc-page .form-group input,
+.ugc-page .form-group textarea {
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 300;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--ugc-line);
+  border-radius: 0;
+  padding: 0.8rem 0;
+  color: var(--ugc-ink);
+}
+
+.ugc-page .form-group input:focus,
+.ugc-page .form-group textarea:focus {
+  outline: none;
+  border-bottom-color: var(--ugc-ink);
+  box-shadow: none;
+}
+
+/* Mobile */
+
+@media (max-width: 767px) {
+  .ugc-page main {
+    padding-top: 3.5rem;
+  }
+
+  .ugc-page .page-intro {
+    margin-bottom: 5rem;
+  }
+
+  .ugc-page .page-title {
+    font-size: clamp(4.5rem, 25vw, 7rem);
+  }
+
+  .ugc-page .social-proof {
+    grid-template-columns: 1fr;
+    max-width: 360px;
+  }
+
+  .ugc-page .proof-item {
+    border-right: 0;
+    border-bottom: 1px solid var(--ugc-line);
+    padding: 1.25rem;
+  }
+
+  .ugc-page .proof-item:last-child {
+    border-bottom: 0;
+  }
+
+  .ugc-page .video-grid {
+    margin-bottom: 6rem;
+  }
+
+  .ugc-page .cta-section {
+    padding: 4rem 0;
+    margin-bottom: 5rem;
+  }
+}
