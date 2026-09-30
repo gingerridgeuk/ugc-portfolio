@@ -2879,3 +2879,428 @@ h2 + p {
   }
 
 }
+/* ==========================================
+   ABOUT PAGE - EDITORIAL PROFILE
+   ========================================== */
+
+.about-page {
+  --about-ink: #28231f;
+  --about-muted: #847b72;
+  --about-line: #ded8d0;
+  --about-paper: #faf8f5;
+  --about-accent: #b77757;
+
+  background: var(--about-paper);
+  color: var(--about-ink);
+  font-family: "DM Sans", sans-serif;
+  font-weight: 300;
+}
+
+.about-page .page-header {
+  background: rgba(250, 248, 245, 0.94);
+  border-bottom: 1px solid var(--about-line);
+  padding: 1.15rem 2rem;
+}
+
+.about-page .back-link {
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.about-page main {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding-top: 2.5rem;
+}
+
+
+/* ---------- INTRO ---------- */
+
+.about-editorial-intro {
+  max-width: 1050px;
+  margin: 0 auto 5rem;
+  padding: 4rem 0 2rem;
+  text-align: center;
+}
+
+.about-kicker {
+  margin: 0 0 1rem;
+  font-size: 0.58rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--about-muted);
+}
+
+.about-editorial-intro h1 {
+  margin: 0;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(5rem, 11vw, 9rem);
+  font-weight: 400;
+  line-height: 0.88;
+  letter-spacing: -0.055em;
+}
+
+.about-handwritten {
+  margin: 1rem 0 0;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.4rem;
+  font-style: italic;
+  color: var(--about-muted);
+}
+
+
+/* ---------- PROFILE SPREAD ---------- */
+
+.about-profile {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  gap: clamp(3rem, 7vw, 7rem);
+  align-items: center;
+
+  max-width: 1050px;
+  margin: 0 auto 8rem;
+}
+
+.about-profile-image {
+  position: relative;
+}
+
+.about-profile-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 680px;
+  object-fit: cover;
+}
+
+
+/* Tiny editorial number beside image */
+
+.about-profile-image::after {
+  content: "PORTRAIT / 01";
+
+  position: absolute;
+  left: -2rem;
+  bottom: 0;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.5rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  color: var(--about-muted);
+
+  transform: rotate(-90deg);
+  transform-origin: left bottom;
+}
+
+
+.about-profile-copy {
+  max-width: 480px;
+}
+
+.about-small-heading {
+  margin: 0 0 1.8rem;
+
+  font-size: 0.58rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--about-muted);
+}
+
+.about-profile-copy .about-lead {
+  margin: 0 0 2rem;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(2rem, 3vw, 2.8rem);
+  font-weight: 400;
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+  color: var(--about-ink);
+}
+
+.about-profile-copy > p:not(.about-small-heading):not(.about-lead) {
+  margin: 0 0 1.3rem;
+
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: var(--about-muted);
+}
+
+
+/* ---------- SHARED SECTION HEADING ---------- */
+
+.about-section-heading {
+  max-width: 760px;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+.about-section-heading > p {
+  margin: 0 0 0.65rem;
+
+  font-size: 0.58rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  color: var(--about-muted);
+}
+
+.about-section-heading h2 {
+  margin: 0;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(3rem, 5vw, 4.8rem);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+
+/* ---------- LITTLE DETAILS ---------- */
+
+.about-details {
+  max-width: 1000px;
+  margin: 0 auto 8rem;
+}
+
+.about-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid var(--about-line);
+  border-left: 1px solid var(--about-line);
+}
+
+.about-detail {
+  min-height: 150px;
+  padding: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  border-right: 1px solid var(--about-line);
+  border-bottom: 1px solid var(--about-line);
+}
+
+.about-detail span {
+  font-size: 0.52rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  color: var(--about-muted);
+}
+
+.about-detail p {
+  max-width: 230px;
+  margin: 2.5rem 0 0;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.45rem;
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+
+/* ---------- WORK WITH ME ---------- */
+
+.about-routes {
+  max-width: 1000px;
+  margin: 0 auto 8rem;
+}
+
+.about-route {
+  display: grid;
+  grid-template-columns: 70px 1fr auto;
+  align-items: center;
+  gap: 1rem;
+
+  padding: 2rem 0;
+
+  border-top: 1px solid var(--about-line);
+
+  color: var(--about-ink);
+  text-decoration: none;
+
+  transition: padding 250ms ease;
+}
+
+.about-route:last-child {
+  border-bottom: 1px solid var(--about-line);
+}
+
+.about-route-number {
+  font-size: 0.55rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  color: var(--about-muted);
+}
+
+.about-route h3 {
+  margin: 0 0 0.3rem;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(2.3rem, 4vw, 3.8rem);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.035em;
+}
+
+.about-route p {
+  margin: 0;
+
+  font-size: 0.62rem;
+  font-weight: 500;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--about-muted);
+}
+
+.about-route-arrow {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+@media (hover: hover) {
+
+  .about-route:hover {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+}
+
+
+/* ---------- CONTACT ---------- */
+
+.about-editorial-contact {
+  max-width: 820px;
+  margin: 0 auto 5rem;
+  padding: 5rem 0;
+  text-align: center;
+
+  border-top: 1px solid var(--about-line);
+}
+
+.about-contact-number {
+  margin: 0 0 0.8rem;
+
+  font-size: 0.58rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  color: var(--about-muted);
+}
+
+.about-editorial-contact h2 {
+  max-width: 750px;
+  margin: 0 auto 1.3rem;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(3.5rem, 7vw, 6rem);
+  font-weight: 400;
+  line-height: 0.95;
+  letter-spacing: -0.045em;
+}
+
+.about-editorial-contact > p:not(.about-contact-number) {
+  max-width: 480px;
+  margin: 0 auto 2rem;
+
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--about-muted);
+}
+
+.about-page .btn {
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 1rem 1.8rem;
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 767px) {
+
+  .about-page main {
+    padding-top: 1rem;
+  }
+
+  .about-editorial-intro {
+    padding: 2.5rem 0 1rem;
+    margin-bottom: 3rem;
+  }
+
+  .about-editorial-intro h1 {
+    font-size: clamp(4rem, 20vw, 6.5rem);
+  }
+
+  .about-handwritten {
+    font-size: 1.15rem;
+  }
+
+  .about-profile {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    margin-bottom: 5rem;
+  }
+
+  .about-profile-image {
+    max-width: 440px;
+    margin: 0 auto;
+  }
+
+  .about-profile-image::after {
+    display: none;
+  }
+
+  .about-profile-copy {
+    max-width: 100%;
+  }
+
+  .about-details {
+    margin-bottom: 5rem;
+  }
+
+  .about-detail-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-detail {
+    min-height: 135px;
+    padding: 1.2rem;
+  }
+
+  .about-detail p {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+  }
+
+  .about-routes {
+    margin-bottom: 5rem;
+  }
+
+  .about-route {
+    grid-template-columns: 40px 1fr auto;
+    padding: 1.5rem 0;
+  }
+
+  .about-route p {
+    font-size: 0.52rem;
+    line-height: 1.5;
+  }
+
+  .about-editorial-contact {
+    padding: 4rem 0;
+  }
+
+}
