@@ -3721,3 +3721,10 @@ h2 + p {
   }
 
 }
+/* About mobile - tighten bio to details spacing */
+
+@media (max-width: 767px) {
+  .about-page .about-profile {
+    margin-bottom: 3.5rem;
+  }
+}
