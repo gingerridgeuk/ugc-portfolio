@@ -432,27 +432,3 @@ document.querySelectorAll('[data-carousel]').forEach((carousel) => {
 
     showSlide(currentSlide);
 });
-
-
-/* UGC Explore link - different destination on mobile and desktop */
-
-const ugcExplore = document.querySelector('.ugc-page .scroll-cue');
-
-if (ugcExplore) {
-    ugcExplore.addEventListener('click', function(event) {
-        event.preventDefault();
-
-        const isMobile = window.matchMedia('(max-width: 767px)').matches;
-
-        const target = isMobile
-            ? document.getElementById('ugc-hero')
-            : document.getElementById('ugc-approach');
-
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        }
-    });
-}
