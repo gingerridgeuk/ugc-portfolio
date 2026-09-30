@@ -120,25 +120,72 @@ function setupVideoGrid() {
 
     videoGrid.innerHTML = '<h2 class="visually-hidden">Recent Work</h2>';
 
-    CONFIG.videos.slice(0, 5).forEach(video => {
+    const workDetails = [
+        {
+            brand: 'Pop of Beauty',
+            type: 'Beauty · UGC',
+            detail: 'Product Demo'
+        },
+        {
+            brand: 'House of Koko',
+            type: 'Hospitality · UGC',
+            detail: 'Social Content'
+        },
+        {
+            brand: 'Rudding Park',
+            type: 'Wellness · UGC',
+            detail: 'Experience Content'
+        },
+        {
+            brand: 'The Glee Club',
+            type: 'Event · UGC',
+            detail: 'Event Content'
+        },
+        {
+            brand: 'Wonder of Wellness',
+            type: 'Educational · UGC',
+            detail: 'Educational Content'
+        }
+    ];
+
+    CONFIG.videos.slice(0, 5).forEach((video, index) => {
+        const item = document.createElement('article');
+        item.className = 'ugc-work-item';
+
         const tile = document.createElement('button');
         tile.className = 'video-tile';
         tile.type = 'button';
         tile.setAttribute('aria-label', `Play ${video.title}`);
 
         tile.innerHTML = `
-            <img src="${video.thumbnail}" alt="${video.title}" class="video-thumbnail" loading="lazy">
-            <div class="video-overlay">
-                <div class="video-title">${video.title}</div>
-                <div class="video-caption">${video.caption}</div>
-            </div>
+            <img
+                src="${video.thumbnail}"
+                alt="${video.title}"
+                class="video-thumbnail"
+                loading="lazy"
+            >
+            <span class="ugc-play-mark" aria-hidden="true">PLAY</span>
         `;
 
         tile.addEventListener('click', () => openVideoModal(video));
-        videoGrid.appendChild(tile);
+
+        const meta = document.createElement('div');
+        meta.className = 'ugc-work-meta';
+
+        meta.innerHTML = `
+            <div class="ugc-work-meta-top">
+                <h3>${workDetails[index].brand}</h3>
+                <span>${workDetails[index].type}</span>
+            </div>
+            <p>${workDetails[index].detail}</p>
+        `;
+
+        item.appendChild(tile);
+        item.appendChild(meta);
+
+        videoGrid.appendChild(item);
     });
 }
-
 // ================================
 // VIDEO MODAL
 // ================================
