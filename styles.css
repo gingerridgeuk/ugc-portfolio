@@ -2100,23 +2100,23 @@ h2 + p {
 
 /* Create rhythm instead of five identical cards */
 
-.ugc-page .video-tile:nth-child(1) {
+.ugc-page .ugc-work-item:nth-of-type(1) {
   margin-top: 3.5rem;
 }
 
-.ugc-page .video-tile:nth-child(2) {
+.ugc-page .ugc-work-item:nth-of-type(2) {
   margin-top: 0;
 }
 
-.ugc-page .video-tile:nth-child(3) {
+.ugc-page .ugc-work-item:nth-of-type(3) {
   margin-top: 5.5rem;
 }
 
-.ugc-page .video-tile:nth-child(4) {
+.ugc-page .ugc-work-item:nth-of-type(4) {
   margin-top: 1.5rem;
 }
 
-.ugc-page .video-tile:nth-child(5) {
+.ugc-page .ugc-work-item:nth-of-type(5) {
   margin-top: 4.5rem;
 }
 
