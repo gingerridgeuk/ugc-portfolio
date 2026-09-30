@@ -2595,3 +2595,178 @@ h2 + p {
   }
 
 }
+/* ==========================================
+   HAZY MAY - EDITORIAL PROJECT CAROUSELS
+   ========================================== */
+
+.hazy-projects {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+  align-items: start;
+}
+
+.hazy-project {
+  min-width: 0;
+}
+
+.hazy-project-media {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background: #eee9e3;
+}
+
+.hazy-carousel-track,
+.hazy-slide {
+  width: 100%;
+  height: 100%;
+}
+
+.hazy-slide {
+  display: none;
+}
+
+.hazy-slide.active {
+  display: block;
+}
+
+.hazy-slide img,
+.hazy-slide video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* ARROWS */
+
+.hazy-carousel-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  transform: translateY(-50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 38px;
+  height: 38px;
+  padding: 0;
+
+  border: 0;
+  border-radius: 50%;
+  background: rgba(250, 248, 245, 0.9);
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 1rem;
+  color: var(--hazy-ink);
+
+  cursor: pointer;
+  transition: background 200ms ease, transform 200ms ease;
+}
+
+.hazy-prev {
+  left: 1rem;
+}
+
+.hazy-next {
+  right: 1rem;
+}
+
+.hazy-carousel-arrow:hover {
+  background: var(--hazy-paper);
+}
+
+
+/* SLIDE NUMBER */
+
+.hazy-carousel-count {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 5;
+
+  padding: 0.45rem 0.65rem;
+  background: rgba(250, 248, 245, 0.9);
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.56rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  color: var(--hazy-ink);
+}
+
+
+/* PROJECT CAPTIONS */
+
+.hazy-project-caption {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+
+  padding-top: 1rem;
+  border-bottom: 1px solid var(--hazy-line);
+  padding-bottom: 1rem;
+}
+
+.hazy-project-caption h3 {
+  margin: 0 0 0.15rem;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.hazy-project-caption p {
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.7rem;
+  color: var(--hazy-muted);
+}
+
+.hazy-project-type {
+  padding-top: 0.25rem;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.54rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--hazy-muted);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 767px) {
+
+  .hazy-projects {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .hazy-carousel-arrow {
+    width: 34px;
+    height: 34px;
+  }
+
+  .hazy-prev {
+    left: 0.7rem;
+  }
+
+  .hazy-next {
+    right: 0.7rem;
+  }
+
+  .hazy-carousel-count {
+    right: 0.7rem;
+    bottom: 0.7rem;
+  }
+
+}
