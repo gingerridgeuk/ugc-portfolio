@@ -2303,3 +2303,73 @@ h2 + p {
     margin-bottom: 2rem;
   }
 }
+/* ==========================================
+   UGC PAGE - COMPACT EDITORIAL LAYOUT
+   ========================================== */
+
+/* Overall content starts higher */
+.ugc-page main {
+  padding-top: 2rem !important;
+}
+
+/* Logo / opening section */
+.ugc-page .page-intro {
+  min-height: 0 !important;
+  height: auto !important;
+  padding: 2rem 0 2.5rem !important;
+  margin: 0 auto 1rem !important;
+}
+
+.ugc-page .ugc-title-wrap {
+  margin: 0 auto 1rem !important;
+}
+
+.ugc-page .ugc-title-image {
+  width: min(300px, 60vw);
+}
+
+/* Explore */
+.ugc-page .scroll-cue {
+  margin: 0.75rem 0 0 !important;
+}
+
+/* Main UGC statement */
+.ugc-page #ugc-hero {
+  min-height: 0 !important;
+  padding: 2.5rem 0 !important;
+  margin: 0 auto 2rem !important;
+}
+
+.ugc-page #ugc-hero h2 {
+  font-size: clamp(2.8rem, 5vw, 4.6rem);
+  margin-bottom: 1rem !important;
+}
+
+/* Stats */
+.ugc-page .social-proof {
+  margin: 1rem auto 3rem !important;
+}
+
+/* What I Create */
+.ugc-page .studio-section {
+  padding: 0 !important;
+  margin: 0 auto 3rem !important;
+}
+
+.ugc-page .section-header {
+  margin: 0 auto 1.5rem !important;
+}
+
+/* Portfolio */
+.ugc-page .video-grid {
+  margin-top: 1rem !important;
+  margin-bottom: 4rem !important;
+}
+
+.ugc-page #ugc-hero {
+  scroll-margin-top: 80px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
