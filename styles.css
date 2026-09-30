@@ -2770,3 +2770,60 @@ h2 + p {
   }
 
 }
+/* ==========================================
+   HAZY MAY - VIDEO FEATURES
+   ========================================== */
+
+.hazy-video-features {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 360px));
+  justify-content: center;
+  gap: 3rem;
+  max-width: 900px;
+  margin: 5rem auto 0;
+}
+
+.hazy-video-feature {
+  min-width: 0;
+}
+
+.hazy-feature-video {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  overflow: hidden;
+  background: #eee9e3;
+}
+
+.hazy-feature-video video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hazy-video-label {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+
+  padding: 0.45rem 0.65rem;
+  background: rgba(250, 248, 245, 0.9);
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.52rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--hazy-ink);
+}
+
+@media (max-width: 767px) {
+
+  .hazy-video-features {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.8rem;
+    margin-top: 3rem;
+  }
+
+}
