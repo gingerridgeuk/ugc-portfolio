@@ -3,7 +3,7 @@
 // ================================
 
 const CONFIG = {
-    email: 'hello@mishahazy.com',
+    email: 'hi@hazymay.co.uk',
     social: {
         instagram: 'https://instagram.com/hazymay_',
         tiktok: 'https://tiktok.com/@hazymay_',
