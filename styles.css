@@ -1991,38 +1991,179 @@ h2 + p {
 /* ---------- SELECTED WORK ---------- */
 
 .ugc-page .ugc-work {
+  max-width: 1100px;
   margin: 0 auto 8rem;
+  padding-top: 1rem;
 }
 
-.ugc-page .ugc-work .section-header {
-  margin-bottom: 2.5rem;
+
+/* Editorial heading */
+
+.ugc-page .ugc-work-heading {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: end;
+  gap: 3rem;
+
+  margin-bottom: 3rem;
+  padding-bottom: 1.8rem;
+
+  border-bottom: 1px solid var(--ugc-line);
 }
+
+.ugc-page .ugc-work-heading-main {
+  text-align: left;
+}
+
+.ugc-page .ugc-work-heading-main .ugc-section-number {
+  margin-bottom: 0.7rem;
+}
+
+.ugc-page .ugc-work-heading h2 {
+  margin: 0;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(4rem, 7vw, 6.8rem);
+  font-weight: 400;
+  line-height: 0.78;
+  letter-spacing: -0.055em;
+}
+
+.ugc-page .ugc-work-heading h2 em {
+  font-weight: 400;
+}
+
+
+/* Small editorial note */
+
+.ugc-page .ugc-work-heading-note {
+  padding-bottom: 0.2rem;
+  text-align: right;
+}
+
+.ugc-page .ugc-work-heading-note p {
+  margin: 0 0 0.8rem;
+
+  font-size: 0.62rem;
+  font-weight: 500;
+  line-height: 1.65;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+
+  color: var(--ugc-ink);
+}
+
+.ugc-page .ugc-work-heading-note span {
+  font-size: 0.52rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+
+  color: var(--ugc-muted);
+}
+
+
+/* Five-video editorial composition */
 
 .ugc-page .video-grid {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+
+  grid-template-columns:
+    0.92fr
+    1.08fr
+    0.88fr
+    1.08fr
+    0.92fr;
+
   gap: 1.4rem;
+
+  align-items: start;
 
   margin: 0;
 }
 
+
+/* Remove old card styling */
+
 .ugc-page .video-tile {
+  width: 100%;
+
+  border: 0;
   border-radius: 0;
-  background: #eee9e3;
   box-shadow: none;
+
+  background: transparent;
 
   transition: transform 300ms ease;
 }
 
+
+/* Create rhythm instead of five identical cards */
+
+.ugc-page .video-tile:nth-child(1) {
+  margin-top: 3.5rem;
+}
+
+.ugc-page .video-tile:nth-child(2) {
+  margin-top: 0;
+}
+
+.ugc-page .video-tile:nth-child(3) {
+  margin-top: 5.5rem;
+}
+
+.ugc-page .video-tile:nth-child(4) {
+  margin-top: 1.5rem;
+}
+
+.ugc-page .video-tile:nth-child(5) {
+  margin-top: 4.5rem;
+}
+
+
 @media (hover: hover) {
+
   .ugc-page .video-tile:hover {
     transform: translateY(-6px);
     box-shadow: none;
   }
+
 }
 
 
-/* ---------- LET'S WORK TOGETHER ---------- */
+/* Mobile */
+
+@media (max-width: 767px) {
+
+  .ugc-page .ugc-work {
+    margin-bottom: 5rem;
+  }
+
+  .ugc-page .ugc-work-heading {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+
+    margin-bottom: 2rem;
+  }
+
+  .ugc-page .ugc-work-heading h2 {
+    font-size: clamp(4rem, 18vw, 5.5rem);
+  }
+
+  .ugc-page .ugc-work-heading-note {
+    text-align: left;
+  }
+
+  .ugc-page .video-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.8rem;
+  }
+
+  .ugc-page .video-tile:nth-child(n) {
+    margin-top: 0;
+  }
+
+}
 
 .ugc-page .cta-section {
   max-width: 1000px;
