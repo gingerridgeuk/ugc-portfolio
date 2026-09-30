@@ -345,3 +345,43 @@ if (document.readyState === 'loading') {
 } else {
     init();
 }
+// Hazy May collaboration carousels
+document.querySelectorAll('[data-carousel]').forEach((carousel) => {
+    const slides = carousel.querySelectorAll('.hazy-slide');
+    const prevButton = carousel.querySelector('.hazy-prev');
+    const nextButton = carousel.querySelector('.hazy-next');
+    const counter = carousel.querySelector('.hazy-current');
+
+    let currentSlide = 0;
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.classList.toggle('active', i === index);
+
+            const video = slide.querySelector('video');
+
+            if (video) {
+                if (i === index) {
+                    video.play().catch(() => {});
+                } else {
+                    video.pause();
+                    video.currentTime = 0;
+                }
+            }
+        });
+
+        counter.textContent = String(index + 1).padStart(2, '0');
+    }
+
+    nextButton.addEventListener('click', () => {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+    });
+
+    prevButton.addEventListener('click', () => {
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        showSlide(currentSlide);
+    });
+
+    showSlide(currentSlide);
+});
