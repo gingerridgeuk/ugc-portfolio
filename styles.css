@@ -2837,6 +2837,6 @@ h2 + p {
 
 .hazy-title-image {
   display: block;
-  width: min(820px, 78vw);
+  width: min(600px, 58vw);
   height: auto;
 }
