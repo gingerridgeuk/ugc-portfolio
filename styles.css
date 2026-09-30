@@ -3600,3 +3600,48 @@ h2 + p {
 .about-handwritten {
   margin-top: 0.4rem;
 }
+
+/* ==========================================
+   PAGE ACCENT BUTTONS
+   ========================================== */
+
+/* Hazy May - Red */
+.hazy-page .btn-primary {
+  background: #b80f12;
+  border-color: #b80f12;
+  color: #fff;
+}
+
+.hazy-page .btn-primary:hover {
+  background: #9f0d10;
+  border-color: #9f0d10;
+  color: #fff;
+}
+
+
+/* UGC - Gold */
+.ugc-page .btn-primary {
+  background: #b08a4a;
+  border-color: #b08a4a;
+  color: #fff;
+}
+
+.ugc-page .btn-primary:hover {
+  background: #98763f;
+  border-color: #98763f;
+  color: #fff;
+}
+
+
+/* About - Red */
+.about-page .btn-primary {
+  background: #b80f12;
+  border-color: #b80f12;
+  color: #fff;
+}
+
+.about-page .btn-primary:hover {
+  background: #9f0d10;
+  border-color: #9f0d10;
+  color: #fff;
+}
