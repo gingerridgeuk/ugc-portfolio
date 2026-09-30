@@ -2247,9 +2247,9 @@ h2 + p {
     gap: 0.8rem;
   }
 
-  .ugc-page .video-tile:nth-child(n) {
-    margin-top: 0;
-  }
+.ugc-page .ugc-work-item:nth-of-type(n) {
+  margin-top: 0;
+}
 
 }
 
