@@ -3680,3 +3680,44 @@ h2 + p {
   background: #eee9e3;
   border-color: #eee9e3;
 }
+/* ==========================================
+   UGC MOBILE - CREATIVE APPROACH
+   ========================================== */
+
+@media (max-width: 767px) {
+
+  .ugc-page .social-proof {
+    display: block;
+    width: 100%;
+    max-width: none;
+
+    margin: 0 auto 4rem;
+    padding: 0;
+
+    background: transparent;
+    border: 0;
+    border-top: 1px solid var(--ugc-line);
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .ugc-page .proof-item {
+    padding: 2rem 1rem;
+
+    border: 0;
+    border-bottom: 1px solid var(--ugc-line);
+
+    background: transparent;
+  }
+
+  .ugc-page .social-proof .proof-value {
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+  }
+
+  .ugc-page .social-proof .proof-label {
+    font-size: 0.55rem;
+    letter-spacing: 0.18em;
+  }
+
+}
