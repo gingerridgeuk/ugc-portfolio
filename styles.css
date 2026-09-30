@@ -2235,3 +2235,71 @@ h2 + p {
     width: min(260px, 70vw);
   }
 }
+/* ==========================================
+   UGC PAGE - TIGHTER SPACING
+   ========================================== */
+
+/* Logo area */
+.ugc-page .page-intro {
+   min-height: 0 !important;
+  margin: 0 auto 1.5rem;
+  padding: 1rem 0 1.5rem;
+}
+
+/* Logo */
+.ugc-page .ugc-title-wrap {
+  margin-bottom: 0.75rem;
+}
+
+/* Explore sits closer to logo */
+.ugc-page .scroll-cue {
+  margin-top: 0.25rem;
+}
+
+/* Pull main headline much closer */
+.ugc-page #ugc-hero {
+  padding: 1.5rem 0;
+  margin: 0 auto 2.5rem;
+}
+
+/* Stats closer to headline */
+.ugc-page .social-proof {
+  margin-top: 0;
+  margin-bottom: 3rem;
+}
+
+/* Pull What I Create towards stats */
+.ugc-page .studio-section {
+  margin-top: 0;
+  margin-bottom: 2.5rem;
+}
+
+.ugc-page .section-header {
+  margin-bottom: 1.5rem;
+}
+
+/* Less space before portfolio */
+.ugc-page .video-grid {
+  margin-top: 0;
+  margin-bottom: 4rem;
+}
+
+@media (max-width: 767px) {
+  .ugc-page .page-intro {
+    margin-bottom: 1rem;
+    padding: 0.5rem 0 1rem;
+  }
+
+  .ugc-page #ugc-hero {
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+  }
+
+  .ugc-page .social-proof {
+    margin-bottom: 2.5rem;
+  }
+
+  .ugc-page .studio-section {
+    margin-bottom: 2rem;
+  }
+}
