@@ -3645,3 +3645,38 @@ h2 + p {
   border-color: #9f0d10;
   color: #fff;
 }
+/* Hazy May contact actions */
+
+.hazy-page .hazy-contact-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.hazy-page .hazy-contact-actions .social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 52px;
+  height: 52px;
+
+  border: 1px solid #ded8d0;
+  border-radius: 50%;
+
+  background: transparent;
+  color: #28231f;
+
+  transition: background 200ms ease, border-color 200ms ease;
+}
+
+.hazy-page .hazy-contact-actions .social-link svg {
+  width: 20px;
+  height: 20px;
+}
+
+.hazy-page .hazy-contact-actions .social-link:hover {
+  background: #eee9e3;
+  border-color: #eee9e3;
+}
