@@ -2840,3 +2840,42 @@ h2 + p {
   width: min(600px, 58vw);
   height: auto;
 }
+
+/* Hazy May - 11 brand logo layout */
+
+.hazy-page .logos-grid {
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.hazy-page .logos-grid img {
+  grid-column: span 3;
+}
+
+/* Centre final row of three */
+.hazy-page .logos-grid img:nth-child(9) {
+  grid-column: 3 / span 3;
+}
+
+.hazy-page .logos-grid img:nth-child(10),
+.hazy-page .logos-grid img:nth-child(11) {
+  grid-column: span 3;
+}
+
+@media (max-width: 767px) {
+
+  .hazy-page .logos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hazy-page .logos-grid img,
+  .hazy-page .logos-grid img:nth-child(9),
+  .hazy-page .logos-grid img:nth-child(10),
+  .hazy-page .logos-grid img:nth-child(11) {
+    grid-column: auto;
+  }
+
+  .hazy-page .logos-grid img:last-child {
+    grid-column: 1 / -1;
+  }
+
+}
