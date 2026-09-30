@@ -3304,3 +3304,22 @@ h2 + p {
   }
 
 }
+/* About - custom title image */
+
+.about-title-wrap {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 1rem;
+}
+
+.about-title-image {
+  display: block;
+  width: min(650px, 68vw);
+  height: auto;
+}
+
+@media (max-width: 767px) {
+  .about-title-image {
+    width: min(500px, 82vw);
+  }
+}
