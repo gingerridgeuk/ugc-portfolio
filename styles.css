@@ -1710,7 +1710,7 @@ h2 + p {
   margin-top: calc(var(--space-lg) * -0.5);
 }
 /* ==========================================
-   UGC PAGE - EDITORIAL REDESIGN
+   UGC PAGE - EDITORIAL CREATIVE PORTFOLIO
    ========================================== */
 
 .ugc-page {
@@ -1720,13 +1720,14 @@ h2 + p {
   --ugc-paper: #faf8f5;
   --ugc-accent: #b77757;
 
+  background: var(--ugc-paper);
+  color: var(--ugc-ink);
   font-family: "DM Sans", sans-serif;
   font-weight: 300;
-  color: var(--ugc-ink);
-  background: var(--ugc-paper);
 }
 
-/* Header */
+
+/* ---------- HEADER ---------- */
 
 .ugc-page .page-header {
   background: rgba(250, 248, 245, 0.94);
@@ -1742,382 +1743,53 @@ h2 + p {
   text-transform: uppercase;
 }
 
-/* Main page */
-
 .ugc-page main {
   max-width: 1180px;
-  padding-top: 5rem;
-}
-
-/* Editorial intro */
-
-.ugc-page .page-intro {
-  margin: 0 auto 7rem;
-  max-width: 900px;
-}
-
-.ugc-page .page-intro .helper-text {
-  font-family: "DM Sans", sans-serif;
-  font-size: 0.68rem;
-  font-weight: 500;
-  letter-spacing: 0.24em;
-  text-transform: uppercase;
-  color: var(--ugc-accent);
-  margin: 0 0 1.4rem;
-}
-
-.ugc-page .page-title {
-  font-family: "Cormorant Garamond", serif;
-  font-size: clamp(5rem, 12vw, 9rem);
-  font-weight: 400;
-  line-height: 0.78;
-  letter-spacing: -0.055em;
-  color: var(--ugc-ink);
-  margin: 0 0 2rem;
-}
-
-.ugc-page .page-intro .hero-subtext {
-  font-family: "DM Sans", sans-serif;
-  font-size: 0.95rem;
-  font-weight: 300;
-  line-height: 1.7;
-  color: var(--ugc-muted);
-  max-width: 440px;
-}
-
-/* Main UGC statement */
-
-.ugc-page #ugc-hero {
-  max-width: 850px;
-  margin: 0 auto 5rem;
-  text-align: center;
-}
-
-.ugc-page #ugc-hero h2 {
-  font-family: "Cormorant Garamond", serif;
-  font-size: clamp(2.8rem, 6vw, 5.2rem);
-  font-weight: 400;
-  line-height: 0.98;
-  letter-spacing: -0.035em;
-  margin-bottom: 1.5rem;
-}
-
-.ugc-page #ugc-hero .hero-subtext {
-  font-family: "DM Sans", sans-serif;
-  font-size: 1rem;
-  font-weight: 300;
-  line-height: 1.75;
-  max-width: 620px;
   margin: 0 auto;
-  color: var(--ugc-muted);
-}
-
-/* Social proof becomes an editorial stats strip */
-
-.ugc-page .social-proof {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  max-width: 900px;
-  margin: 0 auto 8rem;
-  padding: 1.6rem 0;
-  border-top: 1px solid var(--ugc-line);
-  border-bottom: 1px solid var(--ugc-line);
-  background: transparent;
-  box-shadow: none;
-  border-radius: 0;
-}
-
-.ugc-page .proof-item {
-  padding: 0.4rem 1.5rem;
-  text-align: center;
-  border-right: 1px solid var(--ugc-line);
-}
-
-.ugc-page .proof-item:last-child {
-  border-right: 0;
-}
-
-.ugc-page .social-proof .proof-value {
-  font-family: "Cormorant Garamond", serif !important;
-  font-size: 1.65rem;
-  font-weight: 400;
-  line-height: 1.1;
-  margin-bottom: 0.45rem;
-}
-
-.ugc-page .social-proof .proof-label {
-  font-family: "DM Sans", sans-serif !important;
-  font-size: 0.6rem;
-  font-weight: 500;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--ugc-muted);
-}
-
-/* What I Create */
-
-.ugc-page .studio-section {
-  margin-bottom: 6rem;
-}
-
-.ugc-page .section-header {
-  text-align: center;
-  max-width: 700px;
-  margin: 0 auto 2.5rem;
-}
-
-.ugc-page .section-header h2 {
-  font-family: "Cormorant Garamond", serif;
-  font-size: clamp(2.8rem, 5vw, 4.3rem);
-  font-weight: 400;
-  letter-spacing: -0.035em;
-  margin-bottom: 0.8rem;
-}
-
-.ugc-page .section-header p {
-  font-family: "DM Sans", sans-serif;
-  font-size: 0.9rem;
-  font-weight: 300;
-  color: var(--ugc-muted);
-}
-
-/* Services as clean editorial lines instead of bullets */
-
-.ugc-page .service-details .service-item {
-  display: block;
-  max-width: 680px;
-  margin: 0 auto;
-}
-
-.ugc-page .service-item ul {
-  list-style: none !important;
-  max-width: 680px;
-  margin: 0 auto !important;
-  padding: 0;
-  border-top: 1px solid var(--ugc-line);
-}
-
-.ugc-page .service-item li {
-  font-family: "DM Sans", sans-serif;
-  font-size: 0.9rem;
-  font-weight: 400;
-  letter-spacing: 0.02em;
-  color: var(--ugc-ink) !important;
-  padding: 0.95rem 0;
-  margin: 0 !important;
-  border-bottom: 1px solid var(--ugc-line);
-  text-align: center;
-}
-
-.ugc-page .service-item li::before {
-  content: none !important;
-}
-
-/* Portfolio videos */
-
-.ugc-page .video-grid {
-  margin-top: 1rem;
-  margin-bottom: 9rem;
-  gap: 1.4rem;
-}
-
-.ugc-page .video-tile {
-  border-radius: 2px;
-  box-shadow: none;
-  background: #eee9e3;
-  transition: transform 300ms ease;
-}
-
-@media (hover: hover) {
-  .ugc-page .video-tile:hover {
-    transform: translateY(-6px);
-    box-shadow: none;
-  }
-}
-
-/* CTA */
-
-.ugc-page .cta-section {
-  border-top: 1px solid var(--ugc-line);
-  border-bottom: 1px solid var(--ugc-line);
-  padding: 6rem 1rem;
-  margin-bottom: 7rem;
-  background: transparent;
-  text-align: center;
-}
-
-.ugc-page .cta-section h2 {
-  font-family: "Cormorant Garamond", serif;
-  font-size: clamp(3rem, 6vw, 5rem);
-  font-weight: 400;
-  letter-spacing: -0.04em;
-  margin-bottom: 1rem;
-}
-
-.ugc-page .cta-section p {
-  font-family: "DM Sans", sans-serif;
-  font-size: 0.9rem;
-  color: var(--ugc-muted);
-  margin: 0 auto 2rem;
-}
-
-.ugc-page .btn {
-  font-family: "DM Sans", sans-serif;
-  font-size: 0.68rem;
-  font-weight: 500;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  border-radius: 0;
-  padding: 0.95rem 1.6rem;
-}
-
-/* Contact */
-
-.ugc-page .contact-form-section {
-  max-width: 700px;
-  margin: 0 auto 6rem;
-}
-
-.ugc-page .contact-form-section > h2 {
-  font-family: "Cormorant Garamond", serif;
-  font-size: clamp(2.8rem, 5vw, 4.5rem);
-  font-weight: 400;
-  letter-spacing: -0.035em;
-  text-align: center;
-  margin-bottom: 2.5rem;
-}
-
-.ugc-page .contact-form {
-  background: transparent;
-  box-shadow: none;
-  border-radius: 0;
-  padding: 0;
-}
-
-.ugc-page .form-group label {
-  font-family: "DM Sans", sans-serif;
-  font-size: 0.62rem;
-  font-weight: 500;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--ugc-muted);
-}
-
-.ugc-page .form-group input,
-.ugc-page .form-group textarea {
-  font-family: "DM Sans", sans-serif;
-  font-size: 0.95rem;
-  font-weight: 300;
-  background: transparent;
-  border: 0;
-  border-bottom: 1px solid var(--ugc-line);
-  border-radius: 0;
-  padding: 0.8rem 0;
-  color: var(--ugc-ink);
-}
-
-.ugc-page .form-group input:focus,
-.ugc-page .form-group textarea:focus {
-  outline: none;
-  border-bottom-color: var(--ugc-ink);
-  box-shadow: none;
-}
-
-/* Mobile */
-
-@media (max-width: 767px) {
-  .ugc-page main {
-    padding-top: 3.5rem;
-  }
-
-  .ugc-page .page-intro {
-    margin-bottom: 5rem;
-  }
-
-  .ugc-page .page-title {
-    font-size: clamp(4.5rem, 25vw, 7rem);
-  }
-
-  .ugc-page .social-proof {
-    grid-template-columns: 1fr;
-    max-width: 360px;
-  }
-
-  .ugc-page .proof-item {
-    border-right: 0;
-    border-bottom: 1px solid var(--ugc-line);
-    padding: 1.25rem;
-  }
-
-  .ugc-page .proof-item:last-child {
-    border-bottom: 0;
-  }
-
-  .ugc-page .video-grid {
-    margin-bottom: 6rem;
-  }
-
-  .ugc-page .cta-section {
-    padding: 4rem 0;
-    margin-bottom: 5rem;
-  }
-}
-/* ==========================================
-   UGC PAGE - FINAL LAYOUT + SPACING
-   ========================================== */
-
-/* Keep sections sized to their actual content */
-.ugc-page .page-intro,
-.ugc-page #ugc-hero,
-.ugc-page .hero--section,
-.ugc-page .studio-section {
-  min-height: 0;
-  height: auto;
-}
-
-/* ---------- UGC LOGO / INTRO ---------- */
-
-.ugc-page main {
   padding-top: 2rem;
 }
+
+
+/* ---------- OPENING ---------- */
 
 .ugc-page .page-intro {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
   max-width: 900px;
-  margin: 0 auto 2.5rem;
-  padding: 1.5rem 0 1rem;
+  margin: 0 auto 3rem;
+  padding: 2.5rem 0 1rem;
+
   text-align: center;
 }
 
 .ugc-page .ugc-title-wrap {
   display: flex;
   justify-content: center;
-  margin: 0 auto 0.8rem;
+  margin: 0 auto 1.2rem;
 }
 
 .ugc-page .ugc-title-image {
   display: block;
-  width: min(300px, 65vw);
+  width: min(330px, 65vw);
   height: auto;
 }
-
-/* Explore */
 
 .ugc-page .scroll-cue {
   display: inline-flex;
   flex-direction: column;
   align-items: center;
   gap: 0.15rem;
-  margin-top: 0.4rem;
 
-  font-family: "DM Sans", sans-serif;
+  margin-top: 0.5rem;
+
   font-size: 0.58rem;
   font-weight: 500;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+
   color: var(--ugc-muted);
   text-decoration: none;
 }
@@ -2132,70 +1804,395 @@ h2 + p {
 }
 
 
-/* ---------- MAIN UGC STATEMENT ---------- */
+/* ---------- BIG STATEMENT ---------- */
 
 .ugc-page #ugc-hero {
-  max-width: 850px;
-  margin: 0 auto 2.5rem;
-  padding: 2rem 0;
+  max-width: 1000px;
+  margin: 0 auto 3.5rem;
+  padding: 2rem 0 1rem;
+
   text-align: center;
-  scroll-margin-top: 80px;
+}
+
+.ugc-page .ugc-eyebrow {
+  margin: 0 0 1.2rem;
+
+  font-size: 0.58rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+
+  color: var(--ugc-muted);
 }
 
 .ugc-page #ugc-hero h2 {
-  font-size: clamp(2.8rem, 5vw, 4.6rem);
-  margin-bottom: 1rem;
+  max-width: 950px;
+  margin: 0 auto 1.5rem;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(3.5rem, 6.5vw, 6.2rem);
+  font-weight: 400;
+  line-height: 0.94;
+  letter-spacing: -0.045em;
 }
 
 .ugc-page #ugc-hero .hero-subtext {
-  max-width: 620px;
+  max-width: 650px;
   margin: 0 auto;
+
+  font-size: 0.95rem;
+  font-weight: 300;
+  line-height: 1.75;
+
+  color: var(--ugc-muted);
 }
 
 
-/* ---------- STATS ---------- */
+/* ---------- CREATIVE STRIP ---------- */
 
 .ugc-page .social-proof {
-  margin: 0 auto 3.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  max-width: 900px;
+  margin: 0 auto 7rem;
+  padding: 1.7rem 0;
+
+  border-top: 1px solid var(--ugc-line);
+  border-bottom: 1px solid var(--ugc-line);
+}
+
+.ugc-page .proof-item {
+  padding: 0.35rem 1.5rem;
+  text-align: center;
+  border-right: 1px solid var(--ugc-line);
+}
+
+.ugc-page .proof-item:last-child {
+  border-right: 0;
+}
+
+.ugc-page .proof-value {
+  margin-bottom: 0.45rem;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.75rem;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.ugc-page .proof-label {
+  font-size: 0.56rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+
+  color: var(--ugc-muted);
+}
+
+
+/* ---------- SHARED SECTION HEADINGS ---------- */
+
+.ugc-page .section-header {
+  max-width: 760px;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+.ugc-page .ugc-section-number {
+  margin: 0 0 0.65rem;
+
+  font-size: 0.58rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+
+  color: var(--ugc-muted);
+}
+
+.ugc-page .section-header h2 {
+  margin: 0 0 0.8rem;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(3rem, 5vw, 4.8rem);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.ugc-page .section-header > p:last-child {
+  max-width: 560px;
+  margin: 0 auto;
+
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1.7;
+
+  color: var(--ugc-muted);
 }
 
 
 /* ---------- WHAT I CREATE ---------- */
 
 .ugc-page .studio-section {
-  margin: 0 auto 2.5rem;
-}
-
-.ugc-page .section-header {
-  margin: 0 auto 1.5rem;
-}
-
-.ugc-page .section-header h2 {
-  margin-bottom: 0.5rem;
+  max-width: 1000px;
+  margin: 0 auto 8rem;
+  scroll-margin-top: 80px;
 }
 
 .ugc-page .service-details {
   margin: 0;
 }
 
+.ugc-page .service-item {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 .ugc-page .service-item ul {
-  margin-bottom: 0 !important;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  border-top: 1px solid var(--ugc-line);
+}
+
+.ugc-page .service-item li {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  align-items: center;
+
+  margin: 0;
+  padding: 1.25rem 0;
+
+  border-bottom: 1px solid var(--ugc-line);
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.55rem;
+  font-weight: 400;
+  line-height: 1.2;
+
+  color: var(--ugc-ink);
+}
+
+.ugc-page .service-item li::before {
+  content: none;
+}
+
+.ugc-page .service-item li span {
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.54rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+
+  color: var(--ugc-muted);
 }
 
 
-/* ---------- VIDEO PORTFOLIO ---------- */
+/* ---------- SELECTED WORK ---------- */
+
+.ugc-page .ugc-work {
+  margin: 0 auto 8rem;
+}
+
+.ugc-page .ugc-work .section-header {
+  margin-bottom: 2.5rem;
+}
 
 .ugc-page .video-grid {
-  margin-top: 0;
-  margin-bottom: 5rem;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1.4rem;
+
+  margin: 0;
+}
+
+.ugc-page .video-tile {
+  border-radius: 0;
+  background: #eee9e3;
+  box-shadow: none;
+
+  transition: transform 300ms ease;
+}
+
+@media (hover: hover) {
+  .ugc-page .video-tile:hover {
+    transform: translateY(-6px);
+    box-shadow: none;
+  }
 }
 
 
-/* ---------- CTA ---------- */
+/* ---------- LET'S WORK TOGETHER ---------- */
 
 .ugc-page .cta-section {
-  padding: 4rem 1rem;
-  margin-bottom: 4rem;
+  max-width: 1000px;
+  margin: 0 auto 8rem;
+  padding: 5rem 1rem;
+
+  text-align: center;
+
+  background: transparent;
+  border-top: 1px solid var(--ugc-line);
+  border-bottom: 1px solid var(--ugc-line);
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.ugc-page .cta-section .ugc-section-number {
+  margin-bottom: 0.8rem;
+}
+
+.ugc-page .cta-section h2 {
+  max-width: 800px;
+  margin: 0 auto 1rem;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(3.5rem, 7vw, 6rem);
+  font-weight: 400;
+  line-height: 0.95;
+  letter-spacing: -0.045em;
+}
+
+.ugc-page .cta-section > p:not(.ugc-section-number) {
+  max-width: 520px;
+  margin: 0 auto 2rem;
+
+  font-size: 0.9rem;
+  line-height: 1.7;
+
+  color: var(--ugc-muted);
+}
+
+.ugc-page .cta-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.ugc-page .btn {
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+
+  border-radius: 0;
+  padding: 1rem 1.8rem;
+}
+
+.ugc-page .social-links {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.ugc-page .social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+
+  border: 1px solid var(--ugc-line);
+  border-radius: 50%;
+
+  background: transparent;
+  color: var(--ugc-ink);
+
+  transition:
+    background 200ms ease,
+    border-color 200ms ease;
+}
+
+.ugc-page .social-link svg {
+  width: 19px;
+  height: 19px;
+}
+
+.ugc-page .social-link:hover {
+  background: #eee9e3;
+  border-color: #eee9e3;
+}
+
+
+/* ---------- CONTACT ---------- */
+
+.ugc-page .contact-form-section {
+  max-width: 760px;
+  margin: 0 auto 6rem;
+  padding: 0;
+
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.ugc-page .contact-form-section > .section-header {
+  margin-bottom: 3rem;
+}
+
+.ugc-page .contact-form {
+  margin: 0;
+  padding: 0;
+
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.ugc-page .form-group {
+  margin-bottom: 2rem;
+}
+
+.ugc-page .form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+
+  font-size: 0.58rem;
+  font-weight: 500;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+
+  color: var(--ugc-muted);
+}
+
+.ugc-page .form-group input,
+.ugc-page .form-group textarea {
+  width: 100%;
+
+  padding: 0.85rem 0;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 300;
+
+  color: var(--ugc-ink);
+  background: transparent;
+
+  border: 0;
+  border-bottom: 1px solid var(--ugc-line);
+  border-radius: 0;
+
+  box-shadow: none;
+}
+
+.ugc-page .form-group textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+.ugc-page .form-group input:focus,
+.ugc-page .form-group textarea:focus {
+  outline: none;
+  border-bottom-color: var(--ugc-ink);
+  box-shadow: none;
+}
+
+.ugc-page .contact-form button {
+  width: 100%;
+  margin-top: 0.5rem;
 }
 
 
@@ -2208,29 +2205,65 @@ h2 + p {
   }
 
   .ugc-page .page-intro {
-    margin-bottom: 1.5rem;
-    padding-top: 1rem;
+    margin-bottom: 2rem;
+    padding: 2rem 0 1rem;
   }
 
   .ugc-page .ugc-title-image {
-    width: min(250px, 70vw);
+    width: min(280px, 72vw);
   }
 
   .ugc-page #ugc-hero {
-    padding: 1.5rem 0;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
+    padding: 1.5rem 0 1rem;
+  }
+
+  .ugc-page #ugc-hero h2 {
+    font-size: clamp(3rem, 14vw, 4.7rem);
   }
 
   .ugc-page .social-proof {
-    margin-bottom: 2.5rem;
+    grid-template-columns: 1fr;
+    margin-bottom: 5rem;
   }
 
-  .ugc-page .studio-section {
-    margin-bottom: 2rem;
+  .ugc-page .proof-item {
+    padding: 1.2rem;
+    border-right: 0;
+    border-bottom: 1px solid var(--ugc-line);
+  }
+
+  .ugc-page .proof-item:last-child {
+    border-bottom: 0;
+  }
+
+  .ugc-page .studio-section,
+  .ugc-page .ugc-work {
+    margin-bottom: 5rem;
+  }
+
+  .ugc-page .service-item li {
+    grid-template-columns: 45px 1fr;
+    padding: 1.1rem 0;
+    font-size: 1.3rem;
   }
 
   .ugc-page .video-grid {
-    margin-bottom: 3.5rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.8rem;
+  }
+
+  .ugc-page .cta-section {
+    margin-bottom: 5rem;
+    padding: 4rem 1rem;
+  }
+
+  .ugc-page .cta-buttons {
+    flex-direction: column;
+  }
+
+  .ugc-page .contact-form-section {
+    margin-bottom: 4rem;
   }
 
 }
