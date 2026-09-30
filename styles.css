@@ -2827,3 +2827,16 @@ h2 + p {
   }
 
 }
+/* Hazy May custom title */
+
+.hazy-title-wrap {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 1.8rem;
+}
+
+.hazy-title-image {
+  display: block;
+  width: min(820px, 78vw);
+  height: auto;
+}
