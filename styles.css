@@ -2063,45 +2063,56 @@ h2 + p {
   }
 }
 /* ==========================================
-   UGC EDITORIAL REFINEMENTS
+   UGC PAGE - FINAL LAYOUT + SPACING
    ========================================== */
 
-/* Opening masthead */
+/* Keep sections sized to their actual content */
+.ugc-page .page-intro,
+.ugc-page #ugc-hero,
+.ugc-page .hero--section,
+.ugc-page .studio-section {
+  min-height: 0;
+  height: auto;
+}
+
+/* ---------- UGC LOGO / INTRO ---------- */
+
+.ugc-page main {
+  padding-top: 2rem;
+}
 
 .ugc-page .page-intro {
-  min-height: auto;
-  margin: 0 auto 3.5rem;
-  padding: 1.5rem 0 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 900px;
+  margin: 0 auto 2.5rem;
+  padding: 1.5rem 0 1rem;
   text-align: center;
 }
 
-.ugc-page .page-title {
-  font-family: "Allura", cursive;
-  font-size: clamp(6rem, 12vw, 10rem);
-  font-weight: 400;
-  line-height: 0.8;
-  letter-spacing: -0.03em;
-  margin: 0;
-  color: var(--ugc-ink);
+.ugc-page .ugc-title-wrap {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 0.8rem;
 }
 
-.ugc-page .ugc-title-label {
-  font-family: "DM Sans", sans-serif;
-  font-size: 0.62rem;
-  font-weight: 500;
-  letter-spacing: 0.32em;
-  text-transform: uppercase;
-  color: var(--ugc-accent);
-  margin: 1.2rem 0 1.8rem;
+.ugc-page .ugc-title-image {
+  display: block;
+  width: min(300px, 65vw);
+  height: auto;
 }
 
-/* Scroll / explore cue */
+/* Explore */
 
 .ugc-page .scroll-cue {
   display: inline-flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.25rem;
+  gap: 0.15rem;
+  margin-top: 0.4rem;
+
   font-family: "DM Sans", sans-serif;
   font-size: 0.58rem;
   font-weight: 500;
@@ -2109,11 +2120,6 @@ h2 + p {
   text-transform: uppercase;
   color: var(--ugc-muted);
   text-decoration: none;
-  transition: color 200ms ease;
-}
-
-.ugc-page .scroll-cue:hover {
-  color: var(--ugc-ink);
 }
 
 .ugc-page .scroll-arrow {
@@ -2121,178 +2127,98 @@ h2 + p {
   line-height: 1;
 }
 
-/* Pull main statement upwards */
+.ugc-page .scroll-cue:hover {
+  color: var(--ugc-ink);
+}
+
+
+/* ---------- MAIN UGC STATEMENT ---------- */
 
 .ugc-page #ugc-hero {
-  margin: 0 auto 3.5rem;
+  max-width: 850px;
+  margin: 0 auto 2.5rem;
   padding: 2rem 0;
+  text-align: center;
+  scroll-margin-top: 80px;
 }
 
 .ugc-page #ugc-hero h2 {
-  margin-bottom: 1.1rem;
+  font-size: clamp(2.8rem, 5vw, 4.6rem);
+  margin-bottom: 1rem;
 }
 
 .ugc-page #ugc-hero .hero-subtext {
-  max-width: 650px;
+  max-width: 620px;
+  margin: 0 auto;
 }
 
-/* Less dead space throughout */
+
+/* ---------- STATS ---------- */
 
 .ugc-page .social-proof {
-  margin-bottom: 4.5rem;
+  margin: 0 auto 3.5rem;
 }
 
+
+/* ---------- WHAT I CREATE ---------- */
+
 .ugc-page .studio-section {
-  margin-bottom: 3.5rem;
+  margin: 0 auto 2.5rem;
 }
 
 .ugc-page .section-header {
-  margin-bottom: 1.8rem;
+  margin: 0 auto 1.5rem;
 }
+
+.ugc-page .section-header h2 {
+  margin-bottom: 0.5rem;
+}
+
+.ugc-page .service-details {
+  margin: 0;
+}
+
+.ugc-page .service-item ul {
+  margin-bottom: 0 !important;
+}
+
+
+/* ---------- VIDEO PORTFOLIO ---------- */
 
 .ugc-page .video-grid {
   margin-top: 0;
   margin-bottom: 5rem;
 }
 
+
+/* ---------- CTA ---------- */
+
 .ugc-page .cta-section {
   padding: 4rem 1rem;
-  margin-bottom: 4.5rem;
-}
-
-/* Keep sections feeling connected */
-
-.ugc-page #ugc-section h2 {
-  margin-bottom: 0.6rem;
-}
-
-@media (max-width: 767px) {
-  .ugc-page .page-intro {
-    margin-bottom: 2.5rem;
-    padding-top: 1rem;
-  }
-
-  .ugc-page .page-title {
-    font-size: clamp(5.5rem, 30vw, 8rem);
-  }
-
-  .ugc-page #ugc-hero {
-    padding: 1rem 0;
-    margin-bottom: 2.5rem;
-  }
-
-  .ugc-page .social-proof {
-    margin-bottom: 3.5rem;
-  }
-
-  .ugc-page .studio-section {
-    margin-bottom: 3rem;
-  }
-
-  .ugc-page .video-grid {
-    margin-bottom: 4rem;
-  }
-.ugc-page .page-title {
-  font-family: "Mrs Saint Delafield", cursive;
-  font-size: clamp(5rem, 9vw, 7.5rem);
-  font-weight: 400;
-  line-height: 0.75;
-  letter-spacing: 0;
-  margin: 0;
-}
-
-.ugc-page .ugc-title-label {
-  margin-top: 0.35rem;
-  font-size: 0.56rem;
-  letter-spacing: 0.34em;
-}
-
-.ugc-page .scroll-cue {
-  margin-top: 1.25rem;
-}
-/* UGC title artwork */
-
-.ugc-page .ugc-title-wrap {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto 1.5rem;
-}
-
-.ugc-page .ugc-title-image {
-  display: block;
-  width: min(320px, 65vw);
-  height: auto;
-  object-fit: contain;
-}
-
-.ugc-page .scroll-cue {
-  margin-top: 0.5rem;
-}
-
-@media (max-width: 767px) {
-  .ugc-page .ugc-title-image {
-    width: min(260px, 70vw);
-  }
-}
-/* ==========================================
-   UGC PAGE - TIGHTER SPACING
-   ========================================== */
-
-/* Logo area */
-.ugc-page .page-intro {
-   min-height: 0 !important;
-  margin: 0 auto 1.5rem;
-  padding: 1rem 0 1.5rem;
-}
-
-/* Logo */
-.ugc-page .ugc-title-wrap {
-  margin-bottom: 0.75rem;
-}
-
-/* Explore sits closer to logo */
-.ugc-page .scroll-cue {
-  margin-top: 0.25rem;
-}
-
-/* Pull main headline much closer */
-.ugc-page #ugc-hero {
-  padding: 1.5rem 0;
-  margin: 0 auto 2.5rem;
-}
-
-/* Stats closer to headline */
-.ugc-page .social-proof {
-  margin-top: 0;
-  margin-bottom: 3rem;
-}
-
-/* Pull What I Create towards stats */
-.ugc-page .studio-section {
-  margin-top: 0;
-  margin-bottom: 2.5rem;
-}
-
-.ugc-page .section-header {
-  margin-bottom: 1.5rem;
-}
-
-/* Less space before portfolio */
-.ugc-page .video-grid {
-  margin-top: 0;
   margin-bottom: 4rem;
 }
 
+
+/* ---------- MOBILE ---------- */
+
 @media (max-width: 767px) {
+
+  .ugc-page main {
+    padding-top: 1rem;
+  }
+
   .ugc-page .page-intro {
-    margin-bottom: 1rem;
-    padding: 0.5rem 0 1rem;
+    margin-bottom: 1.5rem;
+    padding-top: 1rem;
+  }
+
+  .ugc-page .ugc-title-image {
+    width: min(250px, 70vw);
   }
 
   .ugc-page #ugc-hero {
-    padding: 1rem 0;
-    margin-bottom: 2rem;
+    padding: 1.5rem 0;
+    margin-bottom: 1.5rem;
   }
 
   .ugc-page .social-proof {
@@ -2302,119 +2228,9 @@ h2 + p {
   .ugc-page .studio-section {
     margin-bottom: 2rem;
   }
-}
-/* ==========================================
-   UGC PAGE - COMPACT EDITORIAL LAYOUT
-   ========================================== */
 
-/* Overall content starts higher */
-.ugc-page main {
-  padding-top: 2rem !important;
-}
+  .ugc-page .video-grid {
+    margin-bottom: 3.5rem;
+  }
 
-/* Logo / opening section */
-.ugc-page .page-intro {
-  min-height: 0 !important;
-  height: auto !important;
-  padding: 2rem 0 2.5rem !important;
-  margin: 0 auto 1rem !important;
-}
-
-.ugc-page .ugc-title-wrap {
-  margin: 0 auto 1rem !important;
-}
-
-.ugc-page .ugc-title-image {
-  width: min(300px, 60vw);
-}
-
-/* Explore */
-.ugc-page .scroll-cue {
-  margin: 0.75rem 0 0 !important;
-}
-
-/* Main UGC statement */
-.ugc-page #ugc-hero {
-  min-height: 0 !important;
-  padding: 2.5rem 0 !important;
-  margin: 0 auto 2rem !important;
-}
-
-.ugc-page #ugc-hero h2 {
-  font-size: clamp(2.8rem, 5vw, 4.6rem);
-  margin-bottom: 1rem !important;
-}
-
-/* Stats */
-.ugc-page .social-proof {
-  margin: 1rem auto 3rem !important;
-}
-
-/* What I Create */
-.ugc-page .studio-section {
-  padding: 0 !important;
-  margin: 0 auto 3rem !important;
-}
-
-.ugc-page .section-header {
-  margin: 0 auto 1.5rem !important;
-}
-
-/* Portfolio */
-.ugc-page .video-grid {
-  margin-top: 1rem !important;
-  margin-bottom: 4rem !important;
-}
-
-.ugc-page #ugc-hero {
-  scroll-margin-top: 80px;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-/* FORCE UGC SECTIONS TO CONTENT HEIGHT */
-
-.ugc-page .page-intro,
-.ugc-page #ugc-hero,
-.ugc-page .hero,
-.ugc-page .hero--section,
-.ugc-page .social-proof,
-.ugc-page .studio-section {
-  min-height: 0 !important;
-  height: auto !important;
-}
-
-/* Top UGC logo section */
-.ugc-page .page-intro {
-  padding-top: 1.5rem !important;
-  padding-bottom: 1.5rem !important;
-  margin-bottom: 0 !important;
-}
-
-/* Explore */
-.ugc-page .scroll-cue {
-  margin-top: 0.75rem !important;
-}
-
-/* UGC That Converts section */
-.ugc-page #ugc-hero {
-  padding-top: 2rem !important;
-  padding-bottom: 2rem !important;
-  margin-top: 0 !important;
-  margin-bottom: 1.5rem !important;
-}
-
-/* Stats */
-.ugc-page .social-proof {
-  margin-top: 0 !important;
-  margin-bottom: 2.5rem !important;
-}
-
-/* What I Create */
-.ugc-page .studio-section {
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-  margin-top: 0 !important;
-  margin-bottom: 2.5rem !important;
 }
